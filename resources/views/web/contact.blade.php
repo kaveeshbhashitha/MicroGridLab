@@ -4,7 +4,7 @@
 <head>
     <!-- resources/views/home.blade.php -->
     <x-meta-tags-component
-        title="Programs - Smart Grid Research Group"
+        title="Contacts - Smart Grid Research Group"
         description="Smart Grid Research Group is dedicated to advancing research in smart grid technologies, renewable energy, and sustainable power solutions."
         keywords="smart grid, renewable energy, sustainable energy, power products, AI, power automation"
         author="Your Name"
