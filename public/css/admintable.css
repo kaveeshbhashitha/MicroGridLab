@@ -1,0 +1,54 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        border-bottom: 2px solid #ddd;
+        display: block;
+        margin-bottom: 10px;
+    }
+    table td {
+        border-bottom: none;
+        display: block;
+        text-align: left;
+    }
+    table td:last-child {
+        border-bottom: 1px solid #ddd;
+    }
+}
+img{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+}
+.tableaction{
+    border: none;
+    background-color: white;
+}
+img:hover{
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(209, 131, 131);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.labal{
+    font-size: 15px;
+}
