@@ -135,3 +135,8 @@ Route::post('/project/{id}/unpublish', [ProjectController::class, 'unpublish'])-
 Route::resource('/course', CourseController::class);
 Route::post('/course/{id}/publish', [CourseController::class, 'publish'])->name('course.publish');
 Route::post('/course/{id}/unpublish', [CourseController::class, 'unpublish'])->name('course.unpublish');
+
+// Fallback route for handling undefined routes
+Route::fallback(function () {
+    return view('error404');
+});
