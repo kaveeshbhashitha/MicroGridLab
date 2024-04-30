@@ -8,6 +8,7 @@
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admintable.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ asset('image/admin.png') }}" type="image/x-icon">
     <title>Publications</title>
 </head>
 <body>

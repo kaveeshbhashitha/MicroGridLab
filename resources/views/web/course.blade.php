@@ -262,15 +262,15 @@
                                     <li class="text-dark">{{ $coursedata[$i+1]->eligibility02 }}</li>
                                     <li>or</li>
                                     <li class="text-dark">{{ $coursedata[$i+1]->eligibility03 }}</li>
-                                    @if($coursedata[$i]->eligibility04 != "")
+                                    @if($coursedata[$i+1]->eligibility04 != "")
                                     <li>or</li>
                                     <li class="text-dark">{{ $coursedata[$i+1]->eligibility04 }}</li>
                                     @endif
-                                    @if($coursedata[$i]->eligibility05 != "")
+                                    @if($coursedata[$i+1]->eligibility05 != "")
                                     <li>or</li>
                                     <li class="text-dark">{{ $coursedata[$i+1]->eligibility05 }}</li>
                                     @endif
-                                    @if($coursedata[$i]->eligibility06 != "")
+                                    @if($coursedata[$i+1]->eligibility06 != "")
                                     <li>or</li>
                                     <li class="text-dark">{{ $coursedata[$i+1]->eligibility06 }}</li>
                                     @endif

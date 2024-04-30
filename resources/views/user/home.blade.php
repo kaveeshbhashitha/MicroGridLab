@@ -23,6 +23,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="{{ asset('image/user.png') }}" type="image/x-icon">
     <title>User Home</title>
 
     <style>

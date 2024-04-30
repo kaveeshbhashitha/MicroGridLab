@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <title>People - Coordinator</title>
+    <link rel="icon" href="{{ asset('image/admin.png') }}" type="image/x-icon">
+    <title>People - Update Coordinator</title>
 </head>
 <body>
     <x-admin-layout>
