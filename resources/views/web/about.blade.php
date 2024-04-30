@@ -59,7 +59,6 @@
     </div>
     <!-- Topbar End -->
 
-
     <!-- Brand Start -->
     <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
         <div class="container pb-2">
