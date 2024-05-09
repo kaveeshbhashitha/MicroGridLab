@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-<head>
     <!-- resources/views/home.blade.php -->
     <x-meta-tags-component
-        title="People - Smart Grid Research Group"
+        title="People"
         description="Smart Grid Research Group is dedicated to advancing research in smart grid technologies, renewable energy, and sustainable power solutions."
         keywords="smart grid, renewable energy, sustainable energy, power products, AI, power automation"
         author="Your Name"
@@ -190,8 +189,7 @@
     <div class="container-fluid container-team py-5">
         <div class="container pb-2">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Our International Partners</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+                <h1 class="display-6 mb-5">Our International Partners</h1>
             </div>
             <div class="row g-5 align-items-center mb-5">
 
@@ -230,8 +228,8 @@
     <div class="container-fluid container-service py-2">
         <div class="container pt-1">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">See All International Partners</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+                <h1 class="display-6 mb-5">See All International Partners</h1>
+                
             </div>
             <div class="row g-4">
                 @php
@@ -280,8 +278,8 @@
     <div class="container-fluid container-service py-2">
         <div class="container pt-3">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Our Staff Members</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+                <h1 class="display-6 mb-5">Centre for Microgrid Staff Members</h1>
+                
             </div>
             <div class="row g-4">
                 
@@ -315,8 +313,8 @@
     <div class="container-fluid container-service py-5">
         <div class="container pt-1">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Our Postgraduate Students</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+                <h1 class="display-6 mb-5">Centre for Microgrid Postgraduate Students </h1>
+                
             </div>
             <div class="row g-4">
                 @php
@@ -355,8 +353,8 @@
     <div class="container-fluid container-service py-5">
         <div class="container pt-1">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Our Alumnis</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+                <h1 class="display-6 mb-5">Centre for Microgrid Alumnis</h1>
+                
             </div>
             <div class="row g-4">
 

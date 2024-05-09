@@ -4,7 +4,7 @@
 <head>
     <!-- resources/views/home.blade.php -->
     <x-meta-tags-component
-        title="Contacts - Smart Grid Research Group"
+        title="Contact Us"
         description="Smart Grid Research Group is dedicated to advancing research in smart grid technologies, renewable energy, and sustainable power solutions."
         keywords="smart grid, renewable energy, sustainable energy, power products, AI, power automation"
         author="Your Name"
@@ -46,11 +46,11 @@
                     <a class="breadcrumb-item small text-body" href="{{ route('peoples') }}">People</a>
                     
                     @if(count($publication)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publications</a>
+                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publication</a>
                     @endif
 
                     @if(count($research)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Researches</a>
+                        <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Research</a>
                     @endif
 
                 </nav>
@@ -187,7 +187,7 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="mb-4">Send us a message, We will cantact you soon.</h4>
+                    <h4 class="mb-4">Feel free to ask question or request information</h4>
                     <form action="{{ route('send.email') }}" method="POST">
                     <div class="my-1">
                         @if(session()->has('success'))
@@ -219,7 +219,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="subject">Subject</label>
-                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Question / Request ...">
                                 </div>
                             </div>
                             <div class="col-12">

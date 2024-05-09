@@ -4,7 +4,7 @@
 <head>
     <!-- resources/views/home.blade.php -->
     <x-meta-tags-component
-        title="About - Smart Grid Research Group"
+        title="About Us"
         description="Smart Grid Research Group is dedicated to advancing research in smart grid technologies, renewable energy, and sustainable power solutions."
         keywords="smart grid, renewable energy, sustainable energy, power products, AI, power automation"
         author="Your Name"
@@ -46,11 +46,11 @@
                     <a class="breadcrumb-item small text-body" href="{{ route('peoples') }}">People</a>
                     
                     @if(count($publication)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publications</a>
+                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publication</a>
                     @endif
 
                     @if(count($research)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Researches</a>
+                        <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Research</a>
                     @endif
 
                 </nav>
