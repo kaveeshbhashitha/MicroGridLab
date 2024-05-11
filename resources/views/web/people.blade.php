@@ -46,11 +46,11 @@
                     <a class="breadcrumb-item small text-body" href="{{ route('peoples') }}">People</a>
                     
                     @if(count($publication)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publications</a>
+                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publication</a>
                     @endif
 
                     @if(count($research)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Researches</a>
+                        <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Research</a>
                     @endif
 
                 </nav>
