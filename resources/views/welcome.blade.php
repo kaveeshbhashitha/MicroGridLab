@@ -65,15 +65,15 @@
                 <div class="d-flex">
                     <i class="bi bi-telephone-inbound fs-2"></i>
                     <div class="ms-3">
-                        <h5 class="text-white mb-0">General Numbers: </h5>
+                        <h5 class="text-white mb-0">Contacts </h5>
                         <span>2640051, 2650301</span>
                     </div>
                 </div>
-                <a href="/" class="h1 text-white mb-0">MicroGrid<span class="text-dark">Lab</span></a>
+                <a href="/" class="h2 text-white mb-0">LECO-UOM <span class="text-dark">Smart Grid Research Lab</span></a>
                 <div class="d-flex">
                     <i class="bi bi-envelope fs-2"></i>
                     <div class="ms-3">
-                        <h5 class="text-white mb-0">Mail Now</h5>
+                        <h5 class="text-white mb-0">Mail</h5>
                         <span>smartgrid.lab.uom@gmail.com</span>
                     </div>
                 </div>
@@ -146,10 +146,9 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-7 text-start">
-                                    <h1 class="text-white animated slideInRight mb-3" style="font-size:60px;">Centre for Microgrid Research</h1>
-                                    <h5 class="text-white animated slideInRight">University of Moratuwa</h5>
-                                    <p class="mb-5 animated slideInRight">Welcome to the forefront of energy innovation at the University of Moratuwa microgrid project. Explore how our pioneering research and technology are reshaping the future of sustainable power generation and distribution. Join us in advancing knowledge and driving positive change in the global energy landscape.</p>
-                                    <a href="https://www.researchgate.net/lab/Smart-Grid-Research-Group-K-T-M-U-Hemapala" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                    <h1 class="text-white animated slideInRight mb-3" style="font-size:60px;">Smart Grid Research Lab</h1>
+                                    <p class="mb-5 animated slideInRight">Smart Grid Research Lab of the Department of Electrical Engineering, University of Moratuwa is dedicated to the transformation of conventional power networks to self-healing, interactive, and secure Smart Grids with the integration of communication and information technology to advance power system operations.</p>
+                                    <a target="blank" href="https://www.researchgate.net/lab/Smart-Grid-Research-Group-K-T-M-U-Hemapala" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -161,9 +160,9 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-7 text-end">
-                                    <h1 class="text-white animated slideInRight mb-3" style="font-size:60px;">Microgrid solutions to global problems</h1>
-                                    <p class="mb-5 animated slideInLeft">Through interdisciplinary collaboration, we're harnessing renewable energy sources to power the network sustainably. Our cutting-edge research is paving the way for a more resilient and efficient energy future. Join our community of innovators and contribute to shaping tomorrow's energy solutions.</p>
-                                    <a href="https://uom.lk/elect/group/smart-grid" class="btn btn-primary py-3 px-5 animated slideInLeft">Explore More</a>
+                                    <h1 class="text-white animated slideInRight mb-3" style="font-size:60px;">Smart Grid Research Lab</h1>
+                                    <p class="mb-5 animated slideInLeft">Smart Grid Research Lab of the Department of Electrical Engineering, University of Moratuwa is dedicated to the transformation of conventional power networks to self-healing, interactive, and secure Smart Grids with the integration of communication and information technology to advance power system operations.</p>
+                                    <a target="blank" href="https://uom.lk/elect/group/smart-grid" class="btn btn-primary py-3 px-5 animated slideInLeft">Explore More</a>
                                 </div>
                             </div>
                         </div>

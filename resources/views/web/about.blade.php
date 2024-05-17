@@ -66,15 +66,15 @@
                 <div class="d-flex">
                     <i class="bi bi-telephone-inbound fs-2"></i>
                     <div class="ms-3">
-                        <h5 class="text-white mb-0">General Numbers: </h5>
+                        <h5 class="text-white mb-0">Contact </h5>
                         <span>2640051, 2650301</span>
                     </div>
                 </div>
-                <a href="/" class="h1 text-white mb-0">MicroGrid<span class="text-dark">Lab</span></a>
+                <a href="/" class="h2 text-white mb-0">LECO-UOM <span class="text-dark">Smart Grid Research Lab</span></a>
                 <div class="d-flex">
                     <i class="bi bi-envelope fs-2"></i>
                     <div class="ms-3">
-                        <h5 class="text-white mb-0">Mail Now</h5>
+                        <h5 class="text-white mb-0">Mail</h5>
                         <span>smartgridresearchlab@gmail.com</span>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="text-primary m-0">MicroGrid<span class="text-dark">Lab</span></h1>
+                    <h1 class="text-primary m-0">Smart Grid<span class="text-dark">Research Group</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -140,7 +140,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
-            <h1 class="display-2 text-white mb-3 animated slideInDown">About US</h1>
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Smart Grid Research Group</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <!-- <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a target="blank" href="#">Home</a></li>
