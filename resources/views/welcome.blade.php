@@ -209,8 +209,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-6 mb-4">Trusted experts and latest microgrid technologies</h1>
-                    <p class="mb-4" style="text-align:justify;">Exploring the forefront of scientific inquiry, our laboratory pioneers groundbreaking research, executes transformative projects, and designs impactful programs to drive innovation forward</p>
+                    <h1 class="display-6 mb-4">Collaboration with Research Institutes and Industry: Key to Microgrid Deployment Success</h1>
+                    <p class="mb-4" style="text-align:justify;">Collaboration and partnerships are crucial for the successful implementation of microgrids. These projects are complex and require expertise from various fields, such as renewable energy, energy management systems, and grid optimization. By joining forces, stakeholders can combine their diverse skills, knowledge, and resources, fostering innovation and ensuring comprehensive solutions. We actively seek collaboration with industry and research institutes to achieve sustainable renewable energy systems.</p>
                     <div class="row g-4 g-sm-5 justify-content-center">
                     
                     @php
