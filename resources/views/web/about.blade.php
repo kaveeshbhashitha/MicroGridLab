@@ -66,8 +66,8 @@
                 <div class="d-flex">
                     <i class="bi bi-telephone-inbound fs-2"></i>
                     <div class="ms-3">
-                        <h5 class="text-white mb-0">Contact </h5>
-                        <span>2640051, 2650301</span>
+                        <h5 class="text-white mb-0">Contact</h5>
+                        <span>0112650301 ext 3295</span>
                     </div>
                 </div>
                 <a href="/" class="h2 text-white mb-0">LECO-UOM <span class="text-dark">Smart Grid Research Lab</span></a>
@@ -75,7 +75,7 @@
                     <i class="bi bi-envelope fs-2"></i>
                     <div class="ms-3">
                         <h5 class="text-white mb-0">Mail</h5>
-                        <span>smartgridresearchlab@gmail.com</span>
+                        <span>sgrl-elect@uom.lk</span>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="text-primary m-0">Smart Grid<span class="text-dark">Research Group</span></h1>
+                    <h1 class="text-primary m-0">SmartGrid<span class="text-dark">Research Group</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -99,11 +99,10 @@
                     <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link">Home</a>
                         <a href="{{ route('about') }}" class="nav-item nav-link active">About Us</a>
-                        <a href="{{ route('contact') }}" class="nav-item nav-link">Contact Us</a>
                         <a href="{{ route('peoples') }}" class="nav-item nav-link ">People</a>
                         <a href="{{ route('news') }}" class="nav-item nav-link ">News</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
                             <div class="dropdown-menu bg-light m-0">
                                 
                                 @if(count($research)>0)
@@ -111,18 +110,26 @@
                                 @endif
                                 
                                 @if(count($publication)>0)
-                                    <a href="{{ route('publications') }}" class="dropdown-item">Publication</a>
+                                    <a href="{{ route('publications') }}" class="dropdown-item">Industrial Projects</a>
                                 @endif
 
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light m-0">
+
                                 @if(count($projects)>0)
-                                    <a href="{{ route('projects') }}" class="dropdown-item">Project</a>
+                                    <a href="{{ route('projects') }}" class="dropdown-item">Training Programs</a>
                                 @endif
 
                                 @if(count($course)>0)
-                                    <a href="{{ route('courses') }}" class="dropdown-item">Programs</a>
+                                    <a href="{{ route('courses') }}" class="dropdown-item">Consultant</a>
                                 @endif
+
                             </div>
                         </div>
+                        <a href="{{ route('contact') }}" class="nav-item nav-link">Contact Us</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
                         <a target="blank" class="btn btn-sm-square btn-primary ms-2" href="https://www.facebook.com/SmartGridResearchGroupUOM"><i class="fab fa-facebook-f"></i></a>
@@ -140,7 +147,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
-            <h1 class="display-2 text-white mb-3 animated slideInDown">Smart Grid Research Group</h1>
+            <h1 class="display-2 text-white mb-3 animated slideInDown">About Us</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <!-- <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a target="blank" href="#">Home</a></li>
@@ -212,32 +219,16 @@
                         <h4 class="display-6 mb-4">Our Vision <i class="fas fa-lightbulb"></i></h4>
                         <p class="mb-4" style="text-align:justify;">To actively contribute to the technological advancement of the power system sector for the betterment of the quality of life in Sri Lankan society and the sustainable development of the nation by performing well-organized and focused research in the Smart Grid field.</p>
                     </div>
-
-                    <div class="row g-4 g-sm-5 justify-content-end">
-                        <div class="col-sm-6">
-                            <a target="blank" class="text-white" href="https://www.researchgate.net/lab/Smart-Grid-Research-Group-K-T-M-U-Hemapala">
-                                <div class="about-fact btn-square bg-primary ms-sm-auto" style="width: 130px; height: 50px">
-                                    See More
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    @php
-                        $fiveinternationals = app(\App\Http\Controllers\InternationalController::class)->showFiveInternationals();
-                    @endphp
                     <div class="row g-4 g-sm-5">
-                        <h6 class="my-3">Our International Colloboration</h6>
-                        @if(count($fiveinternationals) > 0)
-                            <div style = "justify-content: space-between; display: flex; flex-wrap: wrap;">
-                                @foreach($fiveinternationals as $int)
-                                    <div style="margin-bottom: 20px;" class="mx-1">
-                                        <a target="blank" href="{{ $int->profileurl }}"><img src="{{ $int->image }}" alt="International Image" style="width: 90px; height: 90px; object-fit: cover; border: none; border-radius: 50%;"></a>
-                                    </div>
-                                @endforeach
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="text mr-4 py-4">
+                                <h6 class="text-justify">The establishment of the Smart Grid Lab, supported by the Asian Development Bank, marks a significant advancement in modern energy infrastructure and innovation.</h6>
+                                <div><i><a href="https://www.adb.org/where-we-work/sri-lanka" target="_blank">About ADB</a></i></div>
                             </div>
-                        @else
-                            <p>No International found.</p>
-                        @endif
+                            <div class="image">
+                                <img src="data:image/png;base64,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" alt="" style="height:auto; width: 150px;">
+                            </div>
+                        </div>
                     </div>
                 </div>
 

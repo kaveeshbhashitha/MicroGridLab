@@ -55,7 +55,7 @@
                     <p class="fs-5 mb-4">MicroGridLab Research Project, MicroGrid Lab</p>
                     <a target="blank" class="btn btn-link d-flex" href="https://www.google.com/maps?sca_esv=5fae2633b037e436&sca_upv=1&output=search&q=university+of+moratuwa&source=lnms&entry=mc&ved=1t:200715&ictx=111"><p><i class="fa fa-map-marker-alt me-2"></i>EE, University of Moratuwa</p></a>
                     <a target="blank" class="btn btn-link d-flex" target="blank" href="tel:0112650301"><p><i class="fa fa-phone-alt me-2"></i>0112650301</p></a>
-                    <a target="blank" class="btn btn-link d-flex" href="mailto:smartgrid.lab.uom@gmail.com"><p><i class="fa fa-envelope me-2"></i>Email Us</p></a>
+                    <a target="blank" class="btn btn-link d-flex" href="mailto:sgrl-elect@uom.lk"><p><i class="fa fa-envelope me-2"></i>Email Us</p></a>
                     <div class="d-flex mt-4">
                         <a target="blank" class="btn btn-lg-square btn-primary me-2" href="https://twitter.com/SGRGUOM"><i class="fab fa-twitter"></i></a>
                         <a target="blank" class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/SmartGridResearchGroupUOM"><i class="fab fa-facebook-f"></i></a>
@@ -110,7 +110,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; <a target="blank" href="/">MicroGridLab</a>. All Rights Reserved.</p>
+                    <p class="mb-0">&copy; <a target="blank" href="/">SmartGridLab</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

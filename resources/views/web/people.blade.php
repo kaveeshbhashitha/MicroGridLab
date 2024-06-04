@@ -68,7 +68,7 @@
                     <i class="bi bi-telephone-inbound fs-2"></i>
                     <div class="ms-3">
                         <h5 class="text-white mb-0">Contact</h5>
-                        <span>2640051, 2650301</span>
+                        <span>0112650301 ext 3295</span>
                     </div>
                 </div>
                 <a href="/" class="h2 text-white mb-0">LECO-UOM <span class="text-dark">Smart Grid Research Lab</span></a>
@@ -76,7 +76,7 @@
                     <i class="bi bi-envelope fs-2"></i>
                     <div class="ms-3">
                         <h5 class="text-white mb-0">Mail</h5>
-                        <span>smartgridresearchlab@gmail.com</span>
+                        <span>sgrl-elect@uom.lk</span>
                     </div>
                 </div>
             </div>
@@ -90,21 +90,20 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="text-primary m-0">MicroGrid<span class="text-dark">Lab</span></h1>
+                    <h1 class="text-primary m-0">SmartGrid<span class="text-dark">Lab</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
+                <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link">Home</a>
-                        <a href="{{ route('about') }}" class="nav-item nav-link">About Us</a>
-                        <a href="{{ route('contact') }}" class="nav-item nav-link">Contact Us</a>
+                        <a href="{{ route('about') }}" class="nav-item nav-link ">About Us</a>
                         <a href="{{ route('peoples') }}" class="nav-item nav-link active">People</a>
                         <a href="{{ route('news') }}" class="nav-item nav-link ">News</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
                             <div class="dropdown-menu bg-light m-0">
                                 
                                 @if(count($research)>0)
@@ -112,18 +111,26 @@
                                 @endif
                                 
                                 @if(count($publication)>0)
-                                    <a href="{{ route('publications') }}" class="dropdown-item">Publication</a>
+                                    <a href="{{ route('publications') }}" class="dropdown-item">Industrial Projects</a>
                                 @endif
 
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light m-0">
+
                                 @if(count($projects)>0)
-                                    <a href="{{ route('projects') }}" class="dropdown-item">Project</a>
+                                    <a href="{{ route('projects') }}" class="dropdown-item">Training Programs</a>
                                 @endif
 
                                 @if(count($course)>0)
-                                    <a href="{{ route('courses') }}" class="dropdown-item">Programs</a>
+                                    <a href="{{ route('courses') }}" class="dropdown-item">Consultant</a>
                                 @endif
+
                             </div>
                         </div>
+                        <a href="{{ route('contact') }}" class="nav-item nav-link">Contact Us</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
                         <a class="btn btn-sm-square btn-primary ms-2" href="https://www.facebook.com/SmartGridResearchGroupUOM"><i class="fab fa-facebook-f"></i></a>
@@ -228,7 +235,7 @@
     <div class="container-fluid container-service py-2">
         <div class="container pt-1">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-5">See All International Partners</h1>
+                <h1 class="display-6 mb-5">International Partners</h1>
                 
             </div>
             <div class="row g-4">
@@ -269,51 +276,12 @@
         </div>
     </div>
     <!-- Service End -->
-    @php
-        $staff = app(\App\Http\Controllers\StaffController::class)->showAllStaffData();
-    @endphp
-    <!-- Service Start -->
-    @if(count($staff)>0)
-    
-    <div class="container-fluid container-service py-2">
-        <div class="container pt-3">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-5">Centre for Microgrid Staff Members</h1>
-                
-            </div>
-            <div class="row g-4">
-                
-            @foreach($staff as $stf)
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        
-                        <div class="d-flex">
-                            <div><img src="{{ $stf->image }}" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px; border: 2px solid #c63333" alt="img" draggable="false"></div>
-                            <div>
-                                <h6>{{ $stf->title }} {{ $stf->firstname }} {{ $stf->lastname }}</h6>
-                                <p style="font-size: 12px;">{{ $stf->department }}, {{ $stf->faculty }}</p>
-                                <p style="font-size: 15px;">{{ $stf->university }}</p>
-                                <div>
-                                    <a target="blank" href="{{ $stf->profileurl }}"><i class="bi bi-link-45deg"></i></a>
-                                    <a href="{{ $stf->email }}"><i class="bi bi-envelope-at-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-            </div>
-        </div>
-    </div>
-    
-    @endif
-    <!-- Service End -->
 
     <!-- Service Start -->
     <div class="container-fluid container-service py-5">
         <div class="container pt-1">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-5">Centre for Microgrid Postgraduate Students </h1>
+                <h1 class="display-6 mb-5">Postgraduate Students </h1>
                 
             </div>
             <div class="row g-4">
@@ -353,7 +321,7 @@
     <div class="container-fluid container-service py-5">
         <div class="container pt-1">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-5">Centre for Microgrid Alumnis</h1>
+                <h1 class="display-6 mb-5">Alumnis</h1>
                 
             </div>
             <div class="row g-4">
@@ -393,6 +361,45 @@
             </div>
         </div>
     </div>
+
+    @php
+        $staff = app(\App\Http\Controllers\StaffController::class)->showAllStaffData();
+    @endphp
+    <!-- Service Start -->
+    @if(count($staff)>0)
+    
+    <div class="container-fluid container-service py-2">
+        <div class="container pt-3">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 mb-5">Staff Members</h1>
+                
+            </div>
+            <div class="row g-4">
+                
+            @foreach($staff as $stf)
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        
+                        <div class="d-flex">
+                            <div><img src="{{ $stf->image }}" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px; border: 2px solid #c63333" alt="img" draggable="false"></div>
+                            <div>
+                                <h6>{{ $stf->title }} {{ $stf->firstname }} {{ $stf->lastname }}</h6>
+                                <p style="font-size: 12px;">{{ $stf->department }}, {{ $stf->faculty }}</p>
+                                <p style="font-size: 15px;">{{ $stf->university }}</p>
+                                <div>
+                                    <a target="blank" href="{{ $stf->profileurl }}"><i class="bi bi-link-45deg"></i></a>
+                                    <a href="{{ $stf->email }}"><i class="bi bi-envelope-at-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+            </div>
+        </div>
+    </div>
+    @endif
+    <!-- Service End -->
 
 
     <x-web-footer></x-web-footer>

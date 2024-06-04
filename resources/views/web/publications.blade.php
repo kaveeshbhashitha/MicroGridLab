@@ -66,7 +66,7 @@
                     <i class="bi bi-telephone-inbound fs-2"></i>
                     <div class="ms-3">
                         <h5 class="text-white mb-0">Contact</h5>
-                        <span>2640051, 2650301</span>
+                        <span>0112650301 ext 3295</span>
                     </div>
                 </div>
                 <a href="/" class="h2 text-white mb-0">LECO-UOM <span class="text-dark">Smart Grid Research Lab</span></a>
@@ -74,7 +74,7 @@
                     <i class="bi bi-envelope fs-2"></i>
                     <div class="ms-3">
                         <h5 class="text-white mb-0">Mail</h5>
-                        <span>smartgrid.lab.uom@gmail.com</span>
+                        <span>sgrl-elect@uom.lk</span>
                     </div>
                 </div>
             </div>
@@ -97,12 +97,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link">Home</a>
-                        <a href="{{ route('about') }}" class="nav-item nav-link">About Us</a>
-                        <a href="{{ route('contact') }}" class="nav-item nav-link">Contact Us</a>
-                        <a href="{{ route('peoples') }}" class="nav-item nav-link">People</a>
+                        <a href="{{ route('about') }}" class="nav-item nav-link ">About Us</a>
+                        <a href="{{ route('peoples') }}" class="nav-item nav-link ">People</a>
                         <a href="{{ route('news') }}" class="nav-item nav-link ">News</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Projects</a>
                             <div class="dropdown-menu bg-light m-0">
                                 
                                 @if(count($research)>0)
@@ -110,18 +109,26 @@
                                 @endif
                                 
                                 @if(count($publication)>0)
-                                    <a href="{{ route('publications') }}" class="dropdown-item active">Publication</a>
+                                    <a href="{{ route('publications') }}" class="dropdown-item active">Industrial Projects</a>
                                 @endif
 
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light m-0">
+
                                 @if(count($projects)>0)
-                                    <a href="{{ route('projects') }}" class="dropdown-item">Project</a>
+                                    <a href="{{ route('projects') }}" class="dropdown-item">Training Programs</a>
                                 @endif
 
                                 @if(count($course)>0)
-                                    <a href="{{ route('courses') }}" class="dropdown-item">Programs</a>
+                                    <a href="{{ route('courses') }}" class="dropdown-item">Consultant</a>
                                 @endif
+
                             </div>
                         </div>
+                        <a href="{{ route('contact') }}" class="nav-item nav-link">Contact Us</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
                         <a class="btn btn-sm-square btn-primary ms-2" href="https://www.facebook.com/SmartGridResearchGroupUOM"><i class="fab fa-facebook-f"></i></a>
