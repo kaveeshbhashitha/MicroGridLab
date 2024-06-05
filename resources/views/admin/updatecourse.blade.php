@@ -8,15 +8,15 @@
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link rel="icon" href="{{ asset('image/admin.png') }}" type="image/x-icon">
-    <title>Update-Course</title>
+    <title>Update-Training Programs</title>
 </head>
 <body>
     <x-app-layout>
         <!--Add research-->
         <div style="background-color: rgb(245, 245, 245); display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; padding: 30px 0 30px 0;">
             <div id="international" class="form-box shadow p-3" style="width: 80%; height: auto; background-color: white; border-radius: 5px; padding-bottom: 30px;">
-                <h5>Projects - Update Course</h5>
-                <div style="width: 18%; height: 1px; border: 1px solid rgb(87, 87, 87);" class="mt-1"></div>
+                <h5>Projects - Update Training Programs</h5>
+                <div style="width: 20%; height: 1px; border: 1px solid rgb(87, 87, 87);" class="mt-1"></div>
 
                 <form class="my-2" action="{{ route('course.update', $course->id) }}" method="POST" enctype="multipart/form-data">
                     <div class="my-2">
@@ -71,7 +71,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="inputCity">Program URL (Compulsary)</label>
-                            <input type="text" name="moredetailsurl" value="{{ $course->moredetailsurl }}" class="form-control" id="inputCity" placeholder="Enter Program Detail URL...">
+                            <input type="text" name="weburl" value="{{ $course->weburl }}" class="form-control" id="inputCity" placeholder="Enter Program Detail URL...">
                         </div>
                     </div>
                     

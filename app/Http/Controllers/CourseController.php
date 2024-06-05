@@ -102,23 +102,9 @@ class CourseController extends Controller
     {
         try {
             $request->validate([
-                'coursetitle' => 'required|string|max:255',
                 'coursename' => 'required|string|max:255',
-                'faculty' => 'required|string|max:255',
-                'department' => 'required|string|max:255',
-                'university' => 'required|string|max:255',
                 'duration' => 'required|string|max:255',
-                'deliverymethod' => 'required|string|max:255',
-                'coursefee' => 'required|string|max:255',
-                'nextintake' => 'required|string|max:255',
-                'eligibility01' => 'required|string',
-                'eligibility02' => 'required|string',
-                'eligibility03' => 'required|string',
                 'weburl' => 'required|string|max:255',
-                'moredetailsurl' => 'required|string|max:255',
-                'telephone' => 'required|string|max:255',
-                'coordinator' => 'required|string|max:255',
-                'email' => 'required|string|max:255',
                 'rank' => 'required|string|max:255',
                 'description' => 'required|string',
                 'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', 
@@ -126,29 +112,12 @@ class CourseController extends Controller
     
             $course = Course::findOrFail($id);
     
-            // Update employee data
-            $course->coursetitle = $request->input('coursetitle');
+            // Update program data
             $course->coursename = $request->input('coursename');
-            $course->faculty = $request->input('faculty');
-            $course->department = $request->input('department');
-            $course->university = $request->input('university');
             $course->duration = $request->input('duration');
-            $course->deliverymethod = $request->input('deliverymethod');
-            $course->coursefee = $request->input('coursefee');
-            $course->nextintake = $request->input('nextintake');
-            $course->eligibility01 = $request->input('eligibility01');
-            $course->eligibility02 = $request->input('eligibility02');
-            $course->eligibility03 = $request->input('eligibility03');
-            $course->eligibility04 = $request->input('eligibility04');
-            $course->eligibility05 = $request->input('eligibility05');
-            $course->eligibility06 = $request->input('eligibility06');
-            $course->applyonlineurl = $request->input('applyonlineurl');
             $course->weburl = $request->input('weburl');
-            $course->moredetailsurl = $request->input('moredetailsurl');
-            $course->telephone = $request->input('telephone');
-            $course->coordinator = $request->input('coordinator');
-            $course->email = $request->input('email');
             $course->description = $request->input('description');
+            $course->rank = $request->input('rank');
     
             // Check if a new photo has been uploaded
             if ($request->hasFile('image')) {

@@ -37,7 +37,6 @@ class PostgraduateController extends Controller
         $eightSetpostgraduatess = Postgraduate::where('status', 'published')
             ->orderBy('rate', 'desc')
             ->latest()    
-            ->take(3)
             ->get(
                 ['title',
                 'firstname',
@@ -128,7 +127,6 @@ class PostgraduateController extends Controller
         $fourSetpostgraduatess = Postgraduate::where('status', 'published')
             ->orderBy('rate', 'desc')
             ->latest()
-            ->take(4)
             ->get(
                 ['title',
                 'firstname',

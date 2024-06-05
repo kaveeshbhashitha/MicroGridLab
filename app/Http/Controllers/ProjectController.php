@@ -103,17 +103,10 @@ class ProjectController extends Controller
         try {
             $request->validate([
                 'projecttitle' => 'required|string|max:255',
-                'studentname' => 'required|string|max:255',
-                'instructer' => 'required|string|max:255',
-                'othermembers' => 'required|string|max:255',
                 'starteddate' => 'required|string|max:255',
-                'endeddate' => 'required|string|max:255',
                 'url' => 'required|string|max:255',
                 'description' => 'required|string',
                 'progress' => 'required|string|max:255',
-                'estduration' => 'required|string|max:255',
-                'client' => 'required|string|max:255',
-                'budget' => 'required|string|max:255',
                 'rate' => 'required|string|max:255',
                 'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', 
             ]);
@@ -122,17 +115,10 @@ class ProjectController extends Controller
     
             // Update employee data
             $project->projecttitle = $request->input('projecttitle');
-            $project->studentname = $request->input('studentname');
-            $project->instructer = $request->input('instructer');
-            $project->othermembers = $request->input('othermembers');
             $project->starteddate = $request->input('starteddate');
-            $project->endeddate = $request->input('endeddate');
             $project->url = $request->input('url');
             $project->description = $request->input('description');
             $project->progress = $request->input('progress');
-            $project->estduration = $request->input('estduration');
-            $project->client = $request->input('client');
-            $project->budget = $request->input('budget');
             $project->rate = $request->input('rate');
     
             // Check if a new photo has been uploaded

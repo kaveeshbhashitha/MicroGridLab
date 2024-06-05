@@ -21,7 +21,6 @@ class AlumniController extends Controller
     {
         $eightSetAlumnis = Alumni::where('status', 'published')
             ->orderBy('rate', 'desc') // Sort by rate column in descending order
-            ->take(8)
             ->latest()
             ->get([
                 'title',
@@ -46,7 +45,6 @@ class AlumniController extends Controller
     {
         $fourSetAlumnis = Alumni::where('status', 'published')
             ->orderBy('rate', 'desc')
-            ->take(4)
             ->latest()
             ->get([
                 'title',

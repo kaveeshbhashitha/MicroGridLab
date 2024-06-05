@@ -29,7 +29,6 @@ class InternationalController extends Controller
     {
         $inters = International::latest()
             ->where('status', 'published')
-            ->take(5)
             ->get();
 
         $leftData = [];
@@ -45,7 +44,6 @@ class InternationalController extends Controller
         $fiveinternationals = International::where('status', 'published')
             ->orderBy('rate', 'desc')
             ->latest()
-            ->take(5)
             ->get(['image', 'profileurl', 'title', 'firstname']);
 
         return $fiveinternationals;

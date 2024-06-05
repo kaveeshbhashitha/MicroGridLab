@@ -43,11 +43,11 @@
 
 
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="inputAddress">Started Date</label>
                             <input type="date" name="starteddate" class="form-control" id="inputAddress" value="{{ $project->starteddate }}">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="inputCity">Progress</label>
                             <select id="inputState" class="form-control" name="progress">
                                 <option selected value="{{ $project->progress }}">{{ $project->progress }}</option>
@@ -55,6 +55,17 @@
                                 <option value="completed">Completed</option>
                                 <option value="pending">Pending</option>
                                 <option value="holded">Holded</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCity">Rate</label>
+                            <select id="inputState" class="form-control" name="rate">
+                                <option selected value="{{ $project->rate }}">{{ $project->rate }}</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
                         </div>
                     </div>

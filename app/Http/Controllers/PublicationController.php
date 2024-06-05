@@ -105,12 +105,6 @@ class PublicationController extends Controller
         try {
             $request->validate([
                 'pubtitle' => 'required|string|max:255',
-                'pubname' => 'required|string|max:255',
-                'pubjournal' => 'required|string|max:255',
-                'pubdate' => 'required|string|max:255',
-                'issue' => 'required|string|max:255',
-                'volume' => 'required|string|max:255',
-                'pages' => 'required|string|max:255',
                 'puburl' => 'required|string|max:255',
                 'rate' => 'required|string|max:255',
                 'description' => 'required|string',
@@ -121,12 +115,6 @@ class PublicationController extends Controller
     
             // Update employee data
             $publication->pubtitle = $request->input('pubtitle');
-            $publication->pubname = $request->input('pubname');
-            $publication->pubjournal = $request->input('pubjournal');
-            $publication->pubdate = $request->input('pubdate');
-            $publication->issue = $request->input('issue');
-            $publication->volume = $request->input('volume');
-            $publication->pages = $request->input('pages');
             $publication->puburl = $request->input('puburl');
             $publication->rate = $request->input('rate');
             $publication->description = $request->input('description');
