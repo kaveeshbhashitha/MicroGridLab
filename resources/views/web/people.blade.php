@@ -7,7 +7,7 @@
         title="People"
         description="Smart Grid Research Group is dedicated to advancing research in smart grid technologies, renewable energy, and sustainable power solutions."
         keywords="smart grid, renewable energy, sustainable energy, power products, AI, power automation"
-        author="Your Name"
+        author="Smart grid lab - University of Moratuwa"
         twitterCard="summary"
         twitterSite="@YourTwitterHandle"
         image="{{ asset('image/sgrg-logo.png') }}"
@@ -45,10 +45,6 @@
                     <a class="breadcrumb-item small text-body" href="{{ route('contact') }}">Contact Us</a>
                     <a class="breadcrumb-item small text-body" href="{{ route('peoples') }}">People</a>
                     
-                    @if(count($publication)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publication</a>
-                    @endif
-
                     @if(count($research)>0)
                         <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Research</a>
                     @endif
@@ -97,7 +93,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
+                    <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link">Home</a>
                         <a href="{{ route('about') }}" class="nav-item nav-link ">About Us</a>
                         <a href="{{ route('peoples') }}" class="nav-item nav-link active">People</a>
@@ -111,7 +107,7 @@
                                 @endif
                                 
                                 @if(count($publication)>0)
-                                    <a href="{{ route('publications') }}" class="dropdown-item">Industrial Projects</a>
+                                    <a href="{{ route('projects') }}" class="dropdown-item">Industrial Projects</a>
                                 @endif
 
                             </div>
@@ -121,11 +117,11 @@
                             <div class="dropdown-menu bg-light m-0">
 
                                 @if(count($projects)>0)
-                                    <a href="{{ route('projects') }}" class="dropdown-item">Training Programs</a>
+                                    <a href="{{ route('courses') }}" class="dropdown-item">Training Programs</a>
                                 @endif
 
                                 @if(count($course)>0)
-                                    <a href="{{ route('courses') }}" class="dropdown-item">Consultant</a>
+                                    <a href="{{ route('consultant') }}" class="dropdown-item">Consultant</a>
                                 @endif
 
                             </div>
@@ -294,7 +290,7 @@
                             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="service-item">
                                     <div class="icon-box-primary mb-4">
-                                        <i class="{{ $postgs->icon }} text-dark"></i>
+                                        <img class="img-fluid w-100" src="{{ $postgs->image }}" alt="">
                                     </div>
                                     <h4 class="mb-3">{{ $postgs->title }} {{ $postgs->firstname }} {{ $postgs->lastname }}</h4>
                                         <p class="mb-3">{{ $postgs->degree }} in {{ $postgs->studyarea }}</p>

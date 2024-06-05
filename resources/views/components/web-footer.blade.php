@@ -72,7 +72,7 @@
                             <a class="btn btn-link" href="{{ route('contact') }}">Contact Us</a>
                             <a class="btn btn-link" href="{{ route('about') }}">About Us</a>
                             @if(count($publication)>0)
-                                <a class="btn btn-link" href="{{ route('publications') }}">Publications</a>
+                                <a class="btn btn-link" href="{{ route('consultant') }}">Publications</a>
                             @endif
                             @if(count($research)>0)
                                 <a class="btn btn-link" href="{{ route('researchers') }}">Researches</a>

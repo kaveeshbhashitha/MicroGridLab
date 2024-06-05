@@ -15,8 +15,8 @@
         <!--Add research-->
         <div style="background-color: rgb(245, 245, 245); display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; padding: 30px 0 30px 0;">
             <div id="international" class="form-box shadow p-3" style="width: 80%; height: auto; background-color: white; border-radius: 5px; padding-bottom: 30px;">
-                <h5>Projects - Add New Course</h5>
-                <div style="width: 18%; height: 1px; border: 1px solid rgb(87, 87, 87);" class="mt-1"></div>
+                <h5>Projects - Add New Training Program</h5>
+                <div style="width: 25%; height: 1px; border: 1px solid rgb(87, 87, 87);" class="mt-1"></div>
 
                 <form class="my-2" method="post" class="col-4" action="{{ url('course') }}" enctype="multipart/form-data">
                     <div class="my-2">
@@ -34,7 +34,7 @@
                     </div>
                     @csrf
                     <div class="form-row">
-                        <div class="form-group col-md-1">
+                        <!-- <div class="form-group col-md-1">
                             <label for="inputCity">Title</label>
                             <select id="inputState" class="form-control" name="coursetitle">
                                 <option selected value="PhD.">PhD</option>
@@ -44,26 +44,14 @@
                                 <option value="BSc.">BSc</option>
                                 <option value="BEng.">BEng</option>
                             </select>
-                        </div>
-                        <div class="form-group col-md-9">
-                            <label for="inputEmail4">Program Name</label>
+                        </div> -->
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Training Program Name</label>
                             <input type="text" name="coursename" class="form-control" id="inputEmail4" placeholder="Enter program name...">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputCity">Duration</label>
-                            <select id="inputState" class="form-control" name="duration">
-                                <option selected value="1">1 Year</option>
-                                <option value="0.5">0.5 Year</option>
-                                <option value="1.5">1.5 Years</option>
-                                <option value="2">2 Years</option>
-                                <option value="2.5">2.5 Years</option>
-                                <option value="3">3 Years</option>
-                                <option value="+3">+3 Years</option>
-                            </select>
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <!-- <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="inputEmail4">Department</label>
                             <input type="text" name="department" class="form-control" id="inputEmail4" placeholder="Enter student name...">
@@ -80,9 +68,9 @@
                             <label for="inputEmail4">Course Fee</label>
                             <input type="text" name="coursefee" class="form-control" id="inputEmail4" placeholder="Enter instructor name...">
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="form-row">
+                    <!-- <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="inputCity">Delivery Method</label>
                             <select id="inputState" class="form-control" name="deliverymethod">
@@ -105,14 +93,14 @@
                             <label for="inputCity">Email</label>
                             <input type="email" name="email" class="form-control" id="inputCity" placeholder="Enter email address..">
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-row">
-                        <div class="form-group col-md-11">
+                        <!-- <div class="form-group col-md-11">
                             <label for="inputAddress">Coordinator</label>
                             <input type="text" name="coordinator" class="form-control" id="inputAddress" placeholder="Enter client name...">
-                        </div>
-                        <div class="form-group col-md-1">
+                        </div> -->
+                        <div class="form-group col-md-2">
                             <label for="inputCity">Rate</label>
                             <select id="inputState" class="form-control" name="rank">
                                 <option selected value="1">1</option>
@@ -120,6 +108,19 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputCity">Duration</label>
+                            <select id="inputState" class="form-control" name="duration">
+                                <option selected value="1">1 Year</option>
+                                <option value="0.5">0.5 Year</option>
+                                <option value="0.5">3 Months</option>
+                                <option value="1.5">1.5 Years</option>
+                                <option value="2">2 Years</option>
+                                <option value="2.5">2.5 Years</option>
+                                <option value="3">3 Years</option>
+                                <option value="+3">+3 Years</option>
                             </select>
                         </div>
                     </div>
@@ -130,7 +131,7 @@
                             <input type="text" name="moredetailsurl" class="form-control" id="inputCity" placeholder="Enter Program Detail URL...">
                         </div>
                     </div>
-                    <div class="form-row">
+                    <!-- <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="inputCity">Applycation URL (Not-Compulsary)</label>
                             <input type="text" name="applyonlineurl" class="form-control" id="inputCity" placeholder="Enter Applycation URL...">
@@ -211,7 +212,7 @@
                             <option value="A three-year degree from a recognized university in a relevant field with a minimum of two years of appropriate experience may be approved by the Senate.">A three-year degree from a recognized university in a relevant field with a minimum of two years of appropriate experience.</option>
                             <option value="Any recognized category of membership of a recognized professional institute, obtained through an academic route, with a minimum of two years of recognized appropriate experience obtained after the membership, may be approved by the Senate.">Any recognized category of membership of a recognized professional institute, obtained through an academic route, with a two years of experience. </option>
                         </select> 
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Description (Do not exceed more than 100 words)</label>

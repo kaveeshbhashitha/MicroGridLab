@@ -41,7 +41,7 @@ Route::post('/send-email', [WebController::class, 'sendEmail'])->name('send.emai
 
 Route::get('/about', [WebController::class, 'about'])->name('about');
 Route::get('/people', [WebController::class, 'peoples'])->name('peoples');
-Route::get('/publications', [WebController::class, 'publications'])->name('publications');
+Route::get('/consultant', [WebController::class, 'consultant'])->name('consultant');
 Route::get('/researchers', [WebController::class, 'researchers'])->name('researchers');
 Route::get('/news', [WebController::class, 'news'])->name('news');
 Route::get('/projects', [WebController::class, 'projects'])->name('projects');

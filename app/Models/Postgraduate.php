@@ -20,6 +20,7 @@ class Postgraduate extends Model
         'endedyear',
         'profileurl',
         'rate',
+        'image',
         'status'
     ];
 }

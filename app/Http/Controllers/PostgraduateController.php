@@ -48,6 +48,7 @@ class PostgraduateController extends Controller
                 'startedyear',
                 'endedyear',
                 'profileurl',
+                'image',
                 'status']
             );
 
@@ -92,6 +93,7 @@ class PostgraduateController extends Controller
                 'startedyear',
                 'endedyear',
                 'profileurl',
+                'image',
                 'status']
             );
 
@@ -137,6 +139,7 @@ class PostgraduateController extends Controller
                 'startedyear',
                 'endedyear',
                 'profileurl',
+                'image',
                 'status']
             );
 
@@ -181,9 +184,19 @@ class PostgraduateController extends Controller
     public function store(Request $request)
     {
         try {
-            $requestdata = $request->all();
-            Postgraduate::create($requestdata);
-            return redirect('/user/people/postgraduate')->with('success', 'Postgraduate added successfully');
+            if ($request->hasFile('image')) {
+                $requestdata = $request->all();
+                $fileName = time() . $request->file('image')->getClientOriginalName();
+                $path = $request->file('image')->storeAs('img', $fileName, 'public');
+                $requestdata['image'] = '/storage/' . $path;
+
+                $requestdata = $request->all();
+                Postgraduate::create($requestdata);
+                return redirect('/user/people/postgraduate')->with('success', 'Postgraduate added successfully');
+            } else {
+                // Handle case where no file is uploaded
+                return redirect()->back()->with('error', 'Please upload a photo');
+            }
 
         } catch (\Exception $e) {
             // Handle any exception that occurs
@@ -225,6 +238,7 @@ class PostgraduateController extends Controller
                 'endedyear' => 'required|string|max:255',
                 'rate' => 'required|string|max:255',
                 'profileurl' => 'required|string|max:255',
+                'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', 
             ]);
     
             $postgraduate = Postgraduate::findOrFail($id);
@@ -240,6 +254,13 @@ class PostgraduateController extends Controller
             $postgraduate->endedyear = $request->input('endedyear');
             $postgraduate->rate = $request->input('rate');
             $postgraduate->profileurl = $request->input('profileurl');
+
+            // Check if a new photo has been uploaded
+            if ($request->hasFile('image')) {
+                $fileName = time() . '.' . $request->file('image')->getClientOriginalExtension();
+                $path = $request->file('image')->storeAs('img', $fileName, 'public');
+                $postgraduate->image = '/storage/' . $path;
+            }
     
             // Save the changes to the database
             $postgraduate->save();

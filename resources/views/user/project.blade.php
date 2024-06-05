@@ -15,8 +15,8 @@
         <!--Add research-->
         <div style="background-color: rgb(245, 245, 245); display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; padding: 30px 0 30px 0;">
             <div id="international" class="form-box shadow p-3" style="width: 80%; height: auto; background-color: white; border-radius: 5px; padding-bottom: 30px;">
-                <h5>Projects - Add New Project</h5>
-                <div style="width: 18%; height: 1px; border: 1px solid rgb(87, 87, 87);" class="mt-1"></div>
+                <h5>Projects - Add New Industrial Project</h5>
+                <div style="width: 25%; height: 1px; border: 1px solid rgb(87, 87, 87);" class="mt-1"></div>
 
                 <form class="my-2" method="post" class="col-4" action="{{ url('project') }}" enctype="multipart/form-data">
                     <div class="my-2">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <!-- <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Student(s) Name</label>
                             <input type="text" name="studentname" class="form-control" id="inputEmail4" placeholder="Enter student name...">
@@ -56,14 +56,33 @@
                             <label for="inputCity">Other project group members (separate using ',' )</label>
                             <input type="text" name="othermembers" class="form-control" id="inputCity" placeholder="Enter project group members..">
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-row">
-                        <div class="form-group col-md-3">
+                        <div class="form-group col-md-5">
                             <label for="inputAddress">Started Date</label>
                             <input type="date" name="starteddate" class="form-control" id="inputAddress" placeholder="Enter started date..,">
                         </div>
-                        <div class="form-group col-md-3">
+                        <div class="form-group col-md-5">
+                            <label for="inputCity">Progress</label>
+                            <select id="inputState" class="form-control" name="progress">
+                                <option selected value="ongoing">On-going</option>
+                                <option value="completed">Completed</option>
+                                <option value="pending">Pending</option>
+                                <option value="holded">Holded</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputCity">Rate</label>
+                            <select id="inputState" class="form-control" name="rate">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <!-- <div class="form-group col-md-3">
                             <label for="inputAddress">Ended Date</label>
                             <input type="date" name="endeddate" class="form-control" id="inputAddress" placeholder="Enter ended date...">
                         </div>
@@ -74,10 +93,10 @@
                         <div class="form-group col-md-3">
                             <label for="inputAddress">Budget (Rs.)</label>
                             <input type="text" name="budget" class="form-control" id="inputAddress" placeholder="Enter value of budget...">
-                        </div>
+                        </div>-->
                     </div>
 
-                    <div class="form-row">
+                    <!-- <div class="form-row">
                         <div class="form-group col-md-5">
                             <label for="inputCity">Progress</label>
                             <select id="inputState" class="form-control" name="progress">
@@ -101,7 +120,7 @@
                             <label for="inputAddress">Client</label>
                             <input type="text" name="client" class="form-control" id="inputAddress" placeholder="Enter client name...">
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-row">
                         <div class="form-group col-md-12">

@@ -8,15 +8,15 @@
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link rel="icon" href="{{ asset('image/user.png') }}" type="image/x-icon">
-    <title>International</title>
+    <title>Partners</title>
 </head>
 <body>
     <x-app-layout>
         <!--International-->
         <div style="background-color: rgb(245, 245, 245); display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; padding: 30px 0;">
             <div id="international" class="form-box shadow p-3" style="width: 80%; height: auto; background-color: white; border-radius: 5px; padding-bottom: 30px;">
-                <h5>Academic people - International partners</h5>
-                <div style="width: 25%; height: 1px; border: 1px solid rgb(87, 87, 87);"></div>
+                <h5>Academic people - Our partners</h5>
+                <div style="width: 20%; height: 1px; border: 1px solid rgb(87, 87, 87);"></div>
 
                 <form class="my-2" method="post" class="col-4" action="{{ url('international') }}" enctype="multipart/form-data">
                     <div class="my-2">
@@ -37,16 +37,14 @@
                         <div class="form-group col-md-1">
                             <label for="inputTitle">Title</label>
                             <select id="inputTitle" class="form-control" name="title">
-                                <option value="Prof." {{ old('title') == 'Prof.' ? 'selected' : '' }}>Prof.</option>
-                                <option value="Dr." {{ old('title') == 'Dr.' ? 'selected' : '' }}>Dr.</option>
-                                <option value="Mr." {{ old('title') == 'Mr.' ? 'selected' : '' }}>Mr.</option>
-                                <option value="Miss." {{ old('title') == 'Miss.' ? 'selected' : '' }}>Miss.</option>
-                                <option value="Ms." {{ old('title') == 'Ms.' ? 'selected' : '' }}>Ms.</option>
-                                <option value="Rev." {{ old('title') == 'Rev.' ? 'selected' : '' }}>Rev.</option>
+                                <option value="">None</option>
+                                <option value="Prof.">Prof.</option>
+                                <option value="Dr.">Dr.</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Miss.">Miss.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Rev.">Rev.</option>
                             </select>
-                            @error('title')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
                         </div>
 
                     <div class="form-group col-md-5">
@@ -102,10 +100,10 @@
                     </div>
                     
                     <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Upload image</label>
-                        <input type="file" name="image" class="form-control" style="border: none;" id="inputPassword4" placeholder="Choose file">
-                    </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Upload image</label>
+                            <input type="file" name="image" class="form-control" style="border: none;" id="inputPassword4" placeholder="Choose file">
+                        </div>
                     </div>
                     
                     <button type="submit" class="btn btn-danger">Add New</button>

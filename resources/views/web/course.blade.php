@@ -4,7 +4,7 @@
 <head>
     <!-- resources/views/home.blade.php -->
     <x-meta-tags-component
-        title="Programs"
+        title="Training Programs"
         description="Smart Grid Research Group is dedicated to advancing research in smart grid technologies, renewable energy, and sustainable power solutions."
         keywords="smart grid, renewable energy, sustainable energy, power products, AI, power automation"
         author="Your Name"
@@ -45,10 +45,6 @@
                     <a class="breadcrumb-item small text-body" href="{{ route('contact') }}">Contact Us</a>
                     <a class="breadcrumb-item small text-body" href="{{ route('peoples') }}">People</a>
                     
-                    @if(count($publication)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publication</a>
-                    @endif
-
                     @if(count($research)>0)
                         <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Research</a>
                     @endif
@@ -98,7 +94,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/" class="nav-item nav-link">Home</a>
                         <a href="{{ route('about') }}" class="nav-item nav-link ">About Us</a>
                         <a href="{{ route('peoples') }}" class="nav-item nav-link ">People</a>
                         <a href="{{ route('news') }}" class="nav-item nav-link ">News</a>
@@ -111,7 +107,7 @@
                                 @endif
                                 
                                 @if(count($publication)>0)
-                                    <a href="{{ route('publications') }}" class="dropdown-item">Industrial Projects</a>
+                                    <a href="{{ route('projects') }}" class="dropdown-item">Industrial Projects</a>
                                 @endif
 
                             </div>
@@ -121,11 +117,11 @@
                             <div class="dropdown-menu bg-light m-0">
 
                                 @if(count($projects)>0)
-                                    <a href="{{ route('projects') }}" class="dropdown-item">Training Programs</a>
+                                    <a href="{{ route('courses') }}" class="dropdown-item active">Training Programs</a>
                                 @endif
 
                                 @if(count($course)>0)
-                                    <a href="{{ route('courses') }}" class="dropdown-item active">Consultant</a>
+                                    <a href="{{ route('consultant') }}" class="dropdown-item">Consultant</a>
                                 @endif
 
                             </div>
@@ -148,7 +144,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
-            <h1 class="display-2 text-white mb-3 animated slideInDown">Our Programs</h1>
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Training Programs</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <!-- <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -170,64 +166,28 @@
                 <div class="container pb-2">
                     <div class="row g-5 align-items-center mb-5">
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid w-100" src="{{ $coursedata[$i]->image }}" alt="">
-                            <p style="text-align:justify;" class="my-2 text-dark">{{ $coursedata[$i]->description }}</p>
+                            <img class="img-fluid w-100" src="{{ $coursedata[$i]->image }}" alt="Training image">
                         </div>
+
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                            <h3 class="mb-1">{{ $coursedata[$i]->coursetitle }} in {{ $coursedata[$i]->coursename }}</h3>
-                            <h6 class="mb-1">Offered by: {{ $coursedata[$i]->department }}, {{ $coursedata[$i]->faculty }}, {{ $coursedata[$i]->university }}</h6>
+                            <h3 class="mb-1">{{ $coursedata[$i]->coursename }}</h3>
                             
                             <div class="d-flex justify-content-between px-4">
                                 <div style="display:flex; flex-direction:column;">
                                     <ul style="list-style-type: square; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px;">
-                                        <li class="text-dark">Coordinator: {{ $coursedata[$i]->coordinator }}</li>
-                                        <li class="text-dark">Email: {{ $coursedata[$i]->email }}</li>
-                                        <li class="text-dark">Mobile: {{ $coursedata[$i]->telephone }}</li>
                                         <li class="text-dark">Duration: {{ $coursedata[$i]->duration }} Year(s)</li>
                                     </ul>
                                 </div>
-                                <div style="display:flex; flex-direction:column; margin-left: 20px;">
-                                    <ul style="list-style-type: square; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px;">
-                                        <li class="text-dark">Course Fee: {{ $coursedata[$i]->coursefee }}</li>
-                                        <li class="text-dark">Delivered: {{ $coursedata[$i]->deliverymethod }}</li>
-                                        <li class="text-dark">Next Intake: {{ $coursedata[$i]->nextintake }}</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <h6 class="text-center">Eligibility Requirments</h6>
-                                <ul style="list-style-type: none; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility01 }}</li>
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility02 }}</li>
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility03 }}</li>
-                                    @if($coursedata[$i]->eligibility04 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility04 }}</li>
-                                    @endif
-                                    @if($coursedata[$i]->eligibility05 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility05 }}</li>
-                                    @endif
-                                    @if($coursedata[$i]->eligibility06 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility06 }}</li>
-                                    @endif
-                                </ul>
                             </div>
 
-                            <div class="d-flex mb-1 justify-content-end">
-                                <a target="blank" href="{{ $coursedata[$i]->moredetailsurl }}"><span class="bg-danger text-white rounded p-2" style="font-size: 12px;">More Information</span></a>
-                                @if($coursedata[$i]->applyonlineurl != "")
-                                    <a target="blank" href="{{ $coursedata[$i]->applyonlineurl }}"><span class="bg-warning text-white rounded p-2 mx-1" style="font-size: 12px;">Apply Online</span></a>
-                                @else
-                                    <div class="mx-2"></div>
+                            <p class="mb-6 short-description text-dark" style="text-align:justify;">{{ substr($coursedata[$i]->description, 0, 150) }}{{ strlen($coursedata[$i]->description) > 150 ? '...' : '' }}</p>
+                                @if(strlen($coursedata[$i]->description) > 150)
+                                    <button class="rounded btn btn-sm btn-primary toggle-btn">Read More</button>
                                 @endif
-                                <a target="blank" href="{{ $coursedata[$i]->weburl }}"><span class="bg-secondary text-white rounded p-2" style="font-size: 12px;">Visit Website</span></a>
+                            <p class="full-description d-none my-1 text-dark" style="text-align:justify;">{{ $coursedata[$i]->description }}</p>
+                            <div class="d-flex justify-content-end">
+                                <abbr title="See article"><a class="btn btn-lg-square btn-primary me-2" href="{{ $coursedata[$i]->weburl }}"><i class="fas fa-link"></i></a></abbr>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -240,65 +200,30 @@
                 <div class="container pb-2">
                     <div class="row g-5 align-items-center mb-5">
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                            <h3 class="mb-1">{{ $coursedata[$i+1]->coursetitle }} in {{ $coursedata[$i+1]->coursename }}</h3>
-                            <h6 class="mb-1">Offered by: {{ $coursedata[$i+1]->department }}, {{ $coursedata[$i+1]->faculty }}, {{ $coursedata[$i+1]->university }}</h6>
+                            <h3 class="mb-1">{{ $coursedata[$i+1]->coursename }}</h3>
                             
                             <div class="d-flex justify-content-between px-4">
                                 <div style="display:flex; flex-direction:column;">
                                     <ul style="list-style-type: square; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px;">
-                                        <li class="text-dark">Coordinator: {{ $coursedata[$i+1]->coordinator }}</li>
-                                        <li class="text-dark">Email: {{ $coursedata[$i+1]->email }}</li>
-                                        <li class="text-dark">Mobile: {{ $coursedata[$i+1]->telephone }}</li>
                                         <li class="text-dark">Duration: {{ $coursedata[$i+1]->duration }} Year(s)</li>
                                     </ul>
                                 </div>
-                                <div style="display:flex; flex-direction:column; margin-left: 20px;">
-                                    <ul style="list-style-type: square; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px;">
-                                        <li class="text-dark">Course Fee: {{ $coursedata[$i+1]->coursefee }}</li>
-                                        <li class="text-dark">Delivered: {{ $coursedata[$i+1]->deliverymethod }}</li>
-                                        <li class="text-dark">Next Intake: {{ $coursedata[$i+1]->nextintake }}</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <h6 class="text-center">Eligibility Requirments</h6>
-                                <ul style="list-style-type: none; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
-                                    <li class="text-dark">{{ $coursedata[$i+1]->eligibility01 }}</li>
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i+1]->eligibility02 }}</li>
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i+1]->eligibility03 }}</li>
-                                    @if($coursedata[$i+1]->eligibility04 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i+1]->eligibility04 }}</li>
-                                    @endif
-                                    @if($coursedata[$i+1]->eligibility05 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i+1]->eligibility05 }}</li>
-                                    @endif
-                                    @if($coursedata[$i+1]->eligibility06 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i+1]->eligibility06 }}</li>
-                                    @endif
-                                </ul>
                             </div>
 
-                            <div class="d-flex mb-1 justify-content-left">
-                                <a target="blank" href="{{ $coursedata[$i+1]->moredetailsurl }}"><span class="bg-danger text-white rounded p-2" style="font-size: 12px;">More Information</span></a>
-                                @if($coursedata[$i]->applyonlineurl != "")
-                                    <a target="blank" href="{{ $coursedata[$i+1]->applyonlineurl }}"><span class="bg-warning text-white rounded p-2 mx-1" style="font-size: 12px;">Apply Online</span></a>
-                                @else
-                                    <div class="mx-2"></div>
+                            <p class="mb-6 short-description text-dark" style="text-align:justify;">{{ substr($coursedata[$i+1]->description, 0, 150) }}{{ strlen($coursedata[$i+1]->description) > 150 ? '...' : '' }}</p>
+                                @if(strlen($coursedata[$i+1]->description) > 150)
+                                    <button class="rounded btn btn-sm btn-primary toggle-btn">Read More</button>
                                 @endif
-                                <a target="blank" href="{{ $coursedata[$i+1]->weburl }}"><span class="bg-secondary text-white rounded p-2" style="font-size: 12px;">Visit Website</span></a>
+                            <p class="full-description d-none my-1 text-dark" style="text-align:justify;">{{ $coursedata[$i+1]->description }}</p>
+
+                            <div class="d-flex justify-content-end">
+                                <abbr title="See article"><a class="btn btn-lg-square btn-primary me-2" href="{{ $coursedata[$i+1]->weburl }}"><i class="fas fa-link"></i></a></abbr>
                             </div>
 
                         </div>
 
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
                             <img class="img-fluid w-100" src="{{ $coursedata[$i+1]->image }}" alt="">
-                            <p style="text-align:justify;" class="my-2 text-dark">{{ $coursedata[$i+1]->description }}</p>
                         </div>
                     </div>
                 </div>
@@ -315,63 +240,26 @@
                     <div class="row g-5 align-items-center mb-5">
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
                             <img class="img-fluid w-100" src="{{ $coursedata[$i]->image }}" alt="">
-                            <p style="text-align:justify;" class="my-2 text-dark">{{ $coursedata[$i]->description }}</p>
                         </div>
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                            <h3 class="mb-1">{{ $coursedata[$i]->coursetitle }} in {{ $coursedata[$i]->coursename }}</h3>
-                            <h6 class="mb-1">Offered by: {{ $coursedata[$i]->department }}, {{ $coursedata[$i]->faculty }}, {{ $coursedata[$i]->university }}</h6>
-                            
+                            <h3 class="mb-1">{{ $coursedata[$i]->coursename }}</h3>
+                           
                             <div class="d-flex justify-content-between px-4">
                                 <div style="display:flex; flex-direction:column;">
                                     <ul style="list-style-type: square; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px;">
-                                        <li class="text-dark">Coordinator: {{ $coursedata[$i]->coordinator }}</li>
-                                        <li class="text-dark">Email: {{ $coursedata[$i]->email }}</li>
-                                        <li class="text-dark">Mobile: {{ $coursedata[$i]->telephone }}</li>
                                         <li class="text-dark">Duration: {{ $coursedata[$i]->duration }} Year(s)</li>
                                     </ul>
                                 </div>
-                                <div style="display:flex; flex-direction:column; margin-left: 20px;">
-                                    <ul style="list-style-type: square; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px;">
-                                        <li class="text-dark">Course Fee: {{ $coursedata[$i]->coursefee }}</li>
-                                        <li class="text-dark">Delivered: {{ $coursedata[$i]->deliverymethod }}</li>
-                                        <li class="text-dark">Next Intake: {{ $coursedata[$i]->nextintake }}</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <h6 class="text-center">Eligibility Requirments</h6>
-                                <ul style="list-style-type: none; padding-left: 0; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility01 }}</li>
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility02 }}</li>
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility03 }}</li>
-                                    @if($coursedata[$i]->eligibility04 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility04 }}</li>
-                                    @endif
-                                    @if($coursedata[$i]->eligibility05 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility05 }}</li>
-                                    @endif
-                                    @if($coursedata[$i]->eligibility06 != "")
-                                    <li>or</li>
-                                    <li class="text-dark">{{ $coursedata[$i]->eligibility06 }}</li>
-                                    @endif
-                                </ul>
                             </div>
 
-                            <div class="d-flex mb-1 justify-content-end">
-                                <a target="blank" href="{{ $coursedata[$i]->moredetailsurl }}"><span class="bg-danger text-white rounded p-2" style="font-size: 12px;">More Information</span></a>
-                                @if($coursedata[$i]->applyonlineurl != "")
-                                    <a target="blank" href="{{ $coursedata[$i]->applyonlineurl }}"><span class="bg-warning text-white rounded p-2 mx-1" style="font-size: 12px;">Apply Online</span></a>
-                                @else
-                                    <div class="mx-2"></div>
+                            <p class="mb-6 short-description text-dark" style="text-align:justify;">{{ substr($coursedata[$i]->description, 0, 150) }}{{ strlen($coursedata[$i]->description) > 150 ? '...' : '' }}</p>
+                                @if(strlen($coursedata[$i]->description) > 150)
+                                    <button class="rounded btn btn-sm btn-primary toggle-btn">Read More</button>
                                 @endif
-                                <a target="blank" href="{{ $coursedata[$i]->weburl }}"><span class="bg-secondary text-white rounded p-2" style="font-size: 12px;">Visit Website</span></a>
+                            <p class="full-description d-none my-1 text-dark" style="text-align:justify;">{{ $coursedata[$i]->description }}</p>
+                            <div class="d-flex justify-content-end">
+                                <abbr title="See article"><a class="btn btn-lg-square btn-primary me-2" href="{{ $coursedata[$i]->weburl }}"><i class="fas fa-link"></i></a></abbr>
                             </div>
-
                         </div>
                     </div>
                 </div>

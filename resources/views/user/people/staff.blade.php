@@ -35,20 +35,17 @@
                     </div>
                     @csrf
                     <div class="form-row">
-                        <div class="form-group col-md-1">
-                            <label for="inputTitle">Title</label>
-                            <select id="inputTitle" class="form-control" name="title">
-                                <option value="Prof." {{ old('title') == 'Prof.' ? 'selected' : '' }}>Prof.</option>
-                                <option value="Dr." {{ old('title') == 'Dr.' ? 'selected' : '' }}>Dr.</option>
-                                <option value="Mr." {{ old('title') == 'Mr.' ? 'selected' : '' }}>Mr.</option>
-                                <option value="Miss." {{ old('title') == 'Miss.' ? 'selected' : '' }}>Miss.</option>
-                                <option value="Ms." {{ old('title') == 'Ms.' ? 'selected' : '' }}>Ms.</option>
-                                <option value="Rev." {{ old('title') == 'Rev.' ? 'selected' : '' }}>Rev.</option>
-                            </select>
-                            @error('title')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
-                        </div>
+                    <div class="form-group col-md-1">
+                        <label for="inputTitle">Title</label>
+                        <select id="inputTitle" class="form-control" name="title">
+                            <option value="Prof.">Prof.</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Miss.">Miss.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Rev.">Rev.</option>
+                        </select>
+                    </div>
 
                     <div class="form-group col-md-5">
                         <label for="inputEmail4">First Name</label>
@@ -91,8 +88,8 @@
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label for="inputZip">University</label>
-                        <input type="text" name="university" class="form-control" id="inputZip" placeholder="Enter university">
+                        <label for="inputZip">Position</label>
+                        <input type="text" name="university" class="form-control" id="inputZip" placeholder="Enter position">
                     </div>
                 </div>
 

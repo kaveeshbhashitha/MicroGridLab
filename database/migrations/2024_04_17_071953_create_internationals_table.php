@@ -13,15 +13,15 @@ return new class extends Migration
     {
         Schema::create('internationals', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->string('firstname');
-            $table->string('lastname');
-            $table->string('email')->unique();
-            $table->string('country');
+            $table->string('lastname')->nullable();
+            $table->string('email')->nullable();
+            $table->string('country')->nullable();
             $table->string('department')->nullable();
             $table->string('faculty')->nullable();
             $table->string('university')->nullable();
-            $table->string('profileurl');
+            $table->string('profileurl')->nullable();
             $table->string('image', 300);
             $table->string('rate');
             $table->string('status')->default('unpublish');

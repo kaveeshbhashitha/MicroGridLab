@@ -43,9 +43,6 @@
                     <a class="breadcrumb-item small text-body" href="{{ route('about') }}">About Us</a>
                     <a class="breadcrumb-item small text-body" href="{{ route('contact') }}">Contact Us</a>
                     <a class="breadcrumb-item small text-body" href="{{ route('peoples') }}">People</a>
-                    @if(count($publication)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publication</a>
-                    @endif
 
                     @if(count($research)>0)
                         <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Research</a>
@@ -108,7 +105,7 @@
                                 @endif
                                 
                                 @if(count($publication)>0)
-                                    <a href="{{ route('publications') }}" class="dropdown-item">Industrial Projects</a>
+                                    <a href="{{ route('projects') }}" class="dropdown-item">Industrial Projects</a>
                                 @endif
 
                             </div>
@@ -118,11 +115,11 @@
                             <div class="dropdown-menu bg-light m-0">
 
                                 @if(count($projects)>0)
-                                    <a href="{{ route('projects') }}" class="dropdown-item">Training Programs</a>
+                                    <a href="{{ route('courses') }}" class="dropdown-item">Training Programs</a>
                                 @endif
 
                                 @if(count($course)>0)
-                                    <a href="{{ route('courses') }}" class="dropdown-item">Consultant</a>
+                                    <a href="{{ route('consultant') }}" class="dropdown-item">Consultant</a>
                                 @endif
 
                             </div>

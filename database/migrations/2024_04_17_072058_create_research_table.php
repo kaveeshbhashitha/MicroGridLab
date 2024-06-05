@@ -14,15 +14,15 @@ return new class extends Migration
         Schema::create('research', function (Blueprint $table) {
             $table->id();
             $table->string('researchtitle');
-            $table->string('researchername');
-            $table->string('instructer');
+            $table->string('researchername')->nullable();
+            $table->string('instructer')->nullable();
             $table->string('otherresearchers')->nullable();
-            $table->string('researchdate');
+            $table->string('researchdate')->nullable();
             $table->string('issue')->nullable();
             $table->string('volume')->nullable();
             $table->string('pages')->nullable();
-            $table->string('puburl');
-            $table->text('description');
+            $table->string('puburl')->nullable();
+            $table->text('description')->nullable();
             $table->string('researchimage', 300);
             $table->string('rate');
             $table->string('status')->default('unpublish');

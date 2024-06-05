@@ -14,15 +14,15 @@ return new class extends Migration
         Schema::create('alumnis', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
-            $table->string('firstname');
-            $table->string('lastname');
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
             $table->string('email')->unique();
-            $table->string('degree');
+            $table->string('degree')->nullable();
             $table->string('studyarea')->nullable();
             $table->string('startedyear')->nullable();
             $table->string('endedyear')->nullable();
-            $table->string('profileurl');
-            $table->string('puburl');
+            $table->string('profileurl')->nullable();
+            $table->string('puburl')->nullable();
             $table->string('alumniimage', 300);
             $table->string('rate');
             $table->string('status')->default('unpublish');

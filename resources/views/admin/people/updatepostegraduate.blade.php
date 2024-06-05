@@ -107,6 +107,16 @@
                         </div>
                     </div>
                     <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <img src="{{ $postgraduate->image }}" alt="International Image" style="height:150px; width: 150px;">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="inputPassword4">Upload image</label>
+                            <input type="file" name="image" class="form-control" style="border: none;" id="inputPassword4" placeholder="Choose file">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="inputCity">Profile URL</label>
                             <input type="text" name="profileurl" class="form-control" id="inputCity" placeholder="Enter profile URL: LinkedIn, Web or ..." value="{{ $postgraduate->profileurl }}">

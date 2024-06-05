@@ -31,7 +31,7 @@
                         {{ __('Users') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('adminproject') }}" :active="request()->routeIs('adminproject')">
-                        {{ __('Projects') }}
+                        {{ __('In-Projects') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('admincourse') }}" :active="request()->routeIs('admincourse')">
                         {{ __('Programs') }}

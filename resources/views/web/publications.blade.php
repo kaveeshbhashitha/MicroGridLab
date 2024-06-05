@@ -4,7 +4,7 @@
 <head>
     <!-- resources/views/home.blade.php -->
     <x-meta-tags-component
-        title="Publication"
+        title="Consultant"
         description="Smart Grid Research Group is dedicated to advancing research in smart grid technologies, renewable energy, and sustainable power solutions."
         keywords="smart grid, renewable energy, sustainable energy, power products, AI, power automation"
         author="Your Name"
@@ -44,9 +44,6 @@
                     <a class="breadcrumb-item small text-body" href="{{ route('about') }}">About Us</a>
                     <a class="breadcrumb-item small text-body" href="{{ route('contact') }}">Contact Us</a>
                     <a class="breadcrumb-item small text-body" href="{{ route('peoples') }}">People</a>
-                    @if(count($publication)>0)
-                        <a class="breadcrumb-item small text-body" href="{{ route('publications') }}">Publication</a>
-                    @endif
 
                     @if(count($research)>0)
                         <a class="breadcrumb-item small text-body" href="{{ route('researchers') }}">Research</a>
@@ -95,13 +92,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
+                <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link">Home</a>
                         <a href="{{ route('about') }}" class="nav-item nav-link ">About Us</a>
                         <a href="{{ route('peoples') }}" class="nav-item nav-link ">People</a>
                         <a href="{{ route('news') }}" class="nav-item nav-link ">News</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Projects</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
                             <div class="dropdown-menu bg-light m-0">
                                 
                                 @if(count($research)>0)
@@ -109,21 +106,21 @@
                                 @endif
                                 
                                 @if(count($publication)>0)
-                                    <a href="{{ route('publications') }}" class="dropdown-item active">Industrial Projects</a>
+                                    <a href="{{ route('projects') }}" class="dropdown-item">Industrial Projects</a>
                                 @endif
 
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu bg-light m-0">
 
                                 @if(count($projects)>0)
-                                    <a href="{{ route('projects') }}" class="dropdown-item">Training Programs</a>
+                                    <a href="{{ route('courses') }}" class="dropdown-item">Training Programs</a>
                                 @endif
 
                                 @if(count($course)>0)
-                                    <a href="{{ route('courses') }}" class="dropdown-item">Consultant</a>
+                                    <a href="{{ route('consultant') }}" class="dropdown-item active">Consultant</a>
                                 @endif
 
                             </div>
@@ -146,7 +143,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
-            <h1 class="display-2 text-white mb-3 animated slideInDown">Publications</h1>
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Consultant</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <!-- <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>

@@ -13,15 +13,15 @@ return new class extends Migration
     {
         Schema::create('publications', function (Blueprint $table) {
             $table->id();
-            $table->string('pubtitle');
-            $table->string('pubname');
-            $table->string('pubjournal');
-            $table->string('pubdate');
+            $table->string('pubtitle')->nullable();
+            $table->string('pubname')->nullable();
+            $table->string('pubjournal')->nullable();
+            $table->string('pubdate')->nullable();
             $table->string('issue')->nullable();
             $table->string('volume')->nullable();
             $table->string('pages')->nullable();
-            $table->string('puburl');
-            $table->text('description');
+            $table->string('puburl')->nullable();
+            $table->text('description')->nullable();
             $table->string('pubimage', 300);
             $table->string('rate');
             $table->string('status')->default('unpublish');

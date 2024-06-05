@@ -14,8 +14,8 @@ class WebController extends Controller
         return view('web.researchers');
     }
 
-    //function for web navigation - publications
-    public function publications(){
+    //function for web navigation - Consultant
+    public function consultant(){
         return view('web.publications');
     }
 

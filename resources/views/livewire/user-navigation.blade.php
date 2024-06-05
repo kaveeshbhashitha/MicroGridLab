@@ -28,10 +28,10 @@
                         {{ __('News') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('addproject') }}" :active="request()->routeIs('addproject')">
-                        {{ __('Projects') }}
+                        {{ __('In-Projects') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('addcourse') }}" :active="request()->routeIs('addcourse')">
-                        {{ __('Programs') }}
+                        {{ __('Training programs') }}
                     </x-nav-link>
                 </div>
             </div>
