@@ -66,10 +66,10 @@
                         <div class="form-group col-md-5">
                             <label for="inputCity">Progress</label>
                             <select id="inputState" class="form-control" name="progress">
-                                <option selected value="ongoing">On-going</option>
-                                <option value="completed">Completed</option>
-                                <option value="pending">Pending</option>
-                                <option value="holded">Holded</option>
+                                <option selected value="Ongoing">On-going</option>
+                                <option value="Completed">Completed</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Holded">Holded</option>
                             </select>
                         </div>
                         <div class="form-group col-md-2">

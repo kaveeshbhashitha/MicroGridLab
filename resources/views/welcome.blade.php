@@ -277,8 +277,12 @@
                 @foreach($fourSetpostgraduatess as $postgs)
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item">
-                            <div class="icon-box-primary mb-4">
-                                <i class="{{ $postgs->icon }} text-dark"></i>
+                            <div class="d-flex justify-content-center">
+                                <div class="icon-box-primary mb-4">
+                                    <div style="margin-bottom: 20px;" class="mx-1">
+                                        <a href="{{ $postgs->profileurl }}"><img src="{{ $postgs->image }}" alt="International Image" style="width: 120px; height: 120px; object-fit: cover; border: none; border-radius: 50%;"></a>
+                                    </div>
+                                </div>
                             </div>
                             <h4 class="mb-3">{{ $postgs->title }} {{ $postgs->firstname }} {{ $postgs->lastname }}</h4>
                                 <p class="mb-3">{{ $postgs->degree }} in {{ $postgs->studyarea }}</p>
@@ -320,7 +324,7 @@
                             <div class="d-flex justify-content-center">
                                 <div class="icon-box-primary mb-4">
                                     <div style="margin-bottom: 20px;" class="mx-1">
-                                        <a href="{{ $postgs->profileurl }}"><img src="{{ $postgs->alumniimage }}" alt="International Image" style="width: 100px; height: 100px; object-fit: cover; border: none; border-radius: 50%;"></a>
+                                        <a href="{{ $postgs->profileurl }}"><img src="{{ $postgs->alumniimage }}" alt="International Image" style="width: 120px; height: 120px; object-fit: cover; border: none; border-radius: 50%;"></a>
                                     </div>
                                 </div>
                             </div>

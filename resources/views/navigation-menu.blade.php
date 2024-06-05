@@ -22,7 +22,7 @@
                         {{ __('Research') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('adminpublish') }}" :active="request()->routeIs('adminpublish')">
-                        {{ __('Publication') }}
+                        {{ __('Consultant') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('adminnews') }}" :active="request()->routeIs('adminnews')">
                         {{ __('News') }}
@@ -34,7 +34,7 @@
                         {{ __('In-Projects') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('admincourse') }}" :active="request()->routeIs('admincourse')">
-                        {{ __('Programs') }}
+                        {{ __('Training Programs') }}
                     </x-nav-link>
                 </div>
             </div>

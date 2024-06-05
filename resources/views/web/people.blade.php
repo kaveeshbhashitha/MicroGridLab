@@ -209,7 +209,7 @@
                     <p class="mb-2">{{ $latestInternational->department }}, {{ $latestInternational->faculty }}, {{ $latestInternational->university }}</p>
                    
                     <div class="d-flex">
-                        <a class="btn btn-lg-square btn-primary me-2" href="mailto:{{ $latestCoordinator->email }}"><i class="far fa-envelope"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="mailto:{{ $latestInternational->email }}"><i class="far fa-envelope"></i></a>
                         <a class="btn btn-lg-square btn-primary me-2" href="{{ $latestInternational->profileurl }}"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -289,8 +289,12 @@
                         @foreach($eightSetpostgraduatess as $postgs)
                             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="service-item">
-                                    <div class="icon-box-primary mb-4">
-                                        <img class="img-fluid w-100" src="{{ $postgs->image }}" alt="">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="icon-box-primary mb-4">
+                                            <div style="margin-bottom: 20px;" class="mx-1">
+                                                <a href="{{ $postgs->profileurl }}"><img src="{{ $postgs->image }}" alt="International Image" style="width: 120px; height: 120px; object-fit: cover; border: none; border-radius: 50%;"></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <h4 class="mb-3">{{ $postgs->title }} {{ $postgs->firstname }} {{ $postgs->lastname }}</h4>
                                         <p class="mb-3">{{ $postgs->degree }} in {{ $postgs->studyarea }}</p>
@@ -333,7 +337,7 @@
                             <div class="d-flex justify-content-center">
                                 <div class="icon-box-primary mb-4">
                                     <div style="margin-bottom: 20px;" class="mx-1">
-                                        <a href="{{ $postgs->profileurl }}"><img src="{{ $postgs->alumniimage }}" alt="International Image" style="width: 100px; height: 100px; object-fit: cover; border: none; border-radius: 50%;"></a>
+                                        <a href="{{ $postgs->profileurl }}"><img src="{{ $postgs->alumniimage }}" alt="International Image" style="width: 120px; height: 120px; object-fit: cover; border: none; border-radius: 50%;"></a>
                                     </div>
                                 </div>
                             </div>
@@ -364,8 +368,8 @@
     <!-- Service Start -->
     @if(count($staff)>0)
     
-    <div class="container-fluid container-service py-2">
-        <div class="container pt-3">
+    <div class="container-fluid container-service py-1">
+        <div class="container pt-1">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 mb-5">Staff Members</h1>
                 
@@ -377,14 +381,15 @@
                     <div class="service-item">
                         
                         <div class="d-flex">
-                            <div><img src="{{ $stf->image }}" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px; border: 2px solid #c63333" alt="img" draggable="false"></div>
+                            <div><img src="{{ $stf->image }}" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-right: 15px; border: 2px solid #c63333" alt="img" draggable="false"></div>
                             <div>
                                 <h6>{{ $stf->title }} {{ $stf->firstname }} {{ $stf->lastname }}</h6>
                                 <p style="font-size: 12px;">{{ $stf->department }}, {{ $stf->faculty }}</p>
                                 <p style="font-size: 15px;">{{ $stf->university }}</p>
-                                <div>
-                                    <a target="blank" href="{{ $stf->profileurl }}"><i class="bi bi-link-45deg"></i></a>
-                                    <a href="{{ $stf->email }}"><i class="bi bi-envelope-at-fill"></i></a>
+                                
+                                <div class="d-flex justify-content-center">
+                                    <a class="btn btn-lg-square btn-primary me-2" href="mailto:{{ $stf->email }}"><i class="far fa-envelope"></i></a>
+                                    <a class="btn btn-lg-square btn-primary me-2" href="{{ $stf->profileurl }}"><i class="fas fa-link"></i></a>
                                 </div>
                             </div>
                         </div>

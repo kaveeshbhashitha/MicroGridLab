@@ -85,7 +85,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="text-primary m-0">MicroGrid<span class="text-dark">Lab</span></h1>
+                    <h1 class="text-primary m-0">SmartGrid<span class="text-dark">Lab</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -169,9 +169,6 @@
                         </div>
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
                             <h3 class="mb-3">{{ $latestPublication[$i]->pubtitle }}</h3>
-                            <h5 class="mb-3">{{ $latestPublication[$i]->pubname }}</h5>
-                            <p class="mb-1">Published on: <a href="{{ $latestPublication[$i]->puburl }}">{{ $latestPublication[$i]->pubjournal }}</a></p>
-                            <p class="mb-2">{{ $latestPublication[$i]->pubdate }}, Issue: {{ $latestPublication[$i]->issue }}, Volume: {{ $latestPublication[$i]->volume }}, Pages: {{ $latestPublication[$i]->pages }}</p>
                             
                             <p class="mb-6 short-description" style="text-align:justify;">{{ substr($latestPublication[$i]->description, 0, 150) }}{{ strlen($latestPublication[$i]->description) > 150 ? '...' : '' }}</p>
                                 @if(strlen($latestPublication[$i]->description) > 150)

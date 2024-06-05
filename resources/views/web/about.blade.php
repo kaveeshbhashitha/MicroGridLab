@@ -241,26 +241,29 @@
                 <div class="col-lg-6 pt-lg-5">
                     <div class="bg-white p-5 mt-lg-5">
                         <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.3s">LECO - UOM Micro Grid Research Pilot Project</h1>
-                        <p style="text-align:justify;" class="mb-4 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
-                        <div class="row g-5 pt-2 mb-3 mt-1">
-                            
+                        
+                        <div class="row g-5 pt-2 mb-3">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="icon-box-primary mb-4">
-                                    <i class="fas fa-user-plus text-dark"></i>
+                                    <iframe width="auto" height="auto"
+                                        src="https://www.youtube.com/embed/WjyRLKaTjKQ?autoplay=1&mute=1">
+                                    </iframe>
                                 </div>
-                                <h5 class="mb-3">Experience & Expertist Instructors</h5>
                             </div>
+                        </div>
+                        <div class="row g-5 pt-2 mb-3">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                                 <div class="icon-box-primary mb-4">
-                                    <i class="fas fa-brain text-dark"></i>
+                                    <iframe width="auto" height="auto"
+                                        src="https://www.youtube.com/embed/Xm1oIRuSOWA?autoplay=1&mute=1">
+                                    </iframe>
                                 </div>
-                                <h5 class="mb-3">Latest & Modern Technology in Sri Lanka</h5>
                             </div>
-
                         </div>
-                        <a target="blank" class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="">Explore More</a>
+                        <a target="_blank" class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="https://www.youtube.com/@smartgridresearchgroupuniv6133">Explore More</a>
                     </div>
                 </div>
+
                 <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="row align-items-end">
                         <div class="col-12 wow fadeIn" data-wow-delay="0.3s">

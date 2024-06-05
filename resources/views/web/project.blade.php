@@ -170,16 +170,13 @@
                         </div>
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
                             <h3 class="mb-3">{{ $latestProject[$i]->projecttitle }}</h3>
-                            <h5 class="mb-3">{{ $latestProject[$i]->studentname }}</h5>
-                            <p class="mb-1">{{ $latestProject[$i]->othermembers }}</p>
-                            <p class="mb-2">Started: {{ $latestProject[$i]->starteddate }}, End: {{ $latestProject[$i]->endeddate }}</p>
+                            <p class="mb-2">Started: {{ $latestProject[$i]->starteddate }}</p>
                             <div>
-                            <p class="mb-2">Budget: {{ $latestProject[$i]->budget }}, Funded by: {{ $latestProject[$i]->client }}</p>
                             <div class="d-flex">
                                 <div>Progress :</div>
-                                @if($latestProject[$i]->progress == 'completed')
+                                @if($latestProject[$i]->progress == 'Completed')
                                     <p class="text-success">{{ $latestProject[$i]->progress }}</p>
-                                @elseif($latestProject[$i]->progress == 'ongoing')
+                                @elseif($latestProject[$i]->progress == 'Ongoing')
                                     <p class="text-primary">{{ $latestProject[$i]->progress }}</p>
                                 @else
                                     <p class="text-danger">{{ $latestProject[$i]->progress }}</p>
@@ -209,19 +206,16 @@
                     <div class="row g-5 align-items-center mb-5">
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
                             <h3 class="mb-3">{{ $latestProject[$i+1]->projecttitle }}</h3>
-                            <h5 class="mb-3">{{ $latestProject[$i+1]->studentname }}</h5>
-                            <p class="mb-1">{{ $latestProject[$i+1]->othermembers }}</p>
-                            <p class="mb-2">Started: {{ $latestProject[$i+1]->starteddate }}, End: {{ $latestProject[$i+1]->endeddate }}</p>
+                            <p class="mb-2">Started: {{ $latestProject[$i+1]->starteddate }}</p>
                             <div>
-                            <p class="mb-2">Budget: {{ $latestProject[$i+1]->budget }}, Funded by: {{ $latestProject[$i+1]->client }}</p>
                             <div class="d-flex">
-                                <div>Progress : </div>
-                                @if($latestProject[$i+1]->progress == 'completed')
+                            <div>Progress :</div>
+                                @if($latestProject[$i]->progress == 'Completed')
                                     <p class="text-success">{{ $latestProject[$i]->progress }}</p>
-                                @elseif($latestProject[$i+1]->progress == 'ongoing')
-                                    <p class="text-primary">{{ $latestProject[$i+1]->progress }}</p>
+                                @elseif($latestProject[$i]->progress == 'Ongoing')
+                                    <p class="text-primary">{{ $latestProject[$i]->progress }}</p>
                                 @else
-                                    <p class="text-danger">{{ $latestProject[$i+1]->progress }}</p>
+                                    <p class="text-danger">{{ $latestProject[$i]->progress }}</p>
                                 @endif
                             </div>
                             </div>

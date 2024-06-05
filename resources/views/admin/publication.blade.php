@@ -9,14 +9,14 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admintable.css') }}" rel="stylesheet">
     <link rel="icon" href="{{ asset('image/admin.png') }}" type="image/x-icon">
-    <title>Publications</title>
+    <title>Consultant</title>
 </head>
 <body>
     <x-admin-layout>
 
         <div style="background-color: rgb(245, 245, 245); display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; padding: 30px 0 30px 0;">
             <div id="international" class="form-box shadow p-3" style="width: 95%; height: auto; background-color: white; border-radius: 5px; padding-bottom: 30px;">
-                <h5>Make changes on Publication</h5>
+                <h5>Make changes on Consultant</h5>
                 <div style="width: 15%; height: 1px; border: 1px solid rgb(87, 87, 87); margin-top:8px"></div>
                 
                 <div class="my-2">

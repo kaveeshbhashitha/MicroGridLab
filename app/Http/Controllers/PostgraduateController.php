@@ -190,8 +190,8 @@ class PostgraduateController extends Controller
                 $path = $request->file('image')->storeAs('img', $fileName, 'public');
                 $requestdata['image'] = '/storage/' . $path;
 
-                $requestdata = $request->all();
                 Postgraduate::create($requestdata);
+
                 return redirect('/user/people/postgraduate')->with('success', 'Postgraduate added successfully');
             } else {
                 // Handle case where no file is uploaded
