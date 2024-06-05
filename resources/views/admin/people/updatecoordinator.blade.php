@@ -39,16 +39,13 @@
                         <div class="form-group col-md-1">
                             <label for="inputTitle">Title</label>
                             <select id="inputTitle" class="form-control" name="title" value="{{ $coordinator->title }}">
-                                <option value="Prof." {{ old('title') == 'Prof.' ? 'selected' : '' }}>Prof.</option>
-                                <option value="Dr." {{ old('title') == 'Dr.' ? 'selected' : '' }}>Dr.</option>
-                                <option value="Mr." {{ old('title') == 'Mr.' ? 'selected' : '' }}>Mr.</option>
-                                <option value="Miss." {{ old('title') == 'Miss.' ? 'selected' : '' }}>Miss.</option>
-                                <option value="Ms." {{ old('title') == 'Ms.' ? 'selected' : '' }}>Ms.</option>
-                                <option value="Rev." {{ old('title') == 'Rev.' ? 'selected' : '' }}>Rev.</option>
+                                <option value="Prof.">Prof.</option>
+                                <option value="Dr.">Dr.</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Miss.">Miss.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Rev.">Rev.</option>
                             </select>
-                            @error('title')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
                         </div>
 
                     <div class="form-group col-md-5">

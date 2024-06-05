@@ -16,8 +16,8 @@
 
         <div style="background-color: rgb(245, 245, 245); display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; padding: 30px 0 30px 0;">
             <div id="international" class="form-box shadow p-3" style="width: 95%; height: auto; background-color: white; border-radius: 5px; padding-bottom: 30px;">
-                <h5>Make changes on Course</h5>
-                <div style="width: 12%; height: 1px; border: 1px solid rgb(87, 87, 87);"></div>
+                <h5>Make changes on Training Programs</h5>
+                <div style="width: 18%; height: 1px; border: 1px solid rgb(87, 87, 87);"></div>
                 
                 <div class="my-2">
                     @if(session()->has('success'))
@@ -38,55 +38,17 @@
                         <thead>
                             <tr>
                                 <th  colspan="5" style="text-align:left;">
-                                    <div class="d-flex justify-content-between pl-1 pr-1">
-                                        <div>Program: {{ $course->coursetitle }} in {{ $course->coursename }}</div>
-                                        <div>Fee: {{ $course->coursefee }}</div>
-                                        <div>Duration: {{ $course->duration }} Year(s)</div>
-                                    </div>
+                                    <div>Program: {{ $course->coursetitle }} in {{ $course->coursename }}</div>
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="text-align:left;">Department: {{ $course->department }}</td>
-                                <td style="text-align:left;">Faculty: {{ $course->faculty }}</td>
-                                <td style="text-align:left;">University: {{ $course->university }}</td>
-                                <td style="text-align:left;">Delivery method: {{ $course->deliverymethod }}</td>
-                                <td style="text-align:left;">Next Intake: {{ $course->nextintake }}</td>
+                                <td colspan="5"  style="text-align:left;">Duration: {{ $course->duration }}</td>
                             </tr>
                             <tr>
-                                <td colspan="2" style="text-align:left;">Coordinator: {{ $course->coordinator }}</td>
-                                <td style="text-align:left;">Telephone: {{ $course->telephone }}</td>
-                                <td style="text-align:left;">Email: {{ $course->email }}</td>
-                                <td style="text-align:left;">Rank: {{ $course->rank }}</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align:left;">Eligibility 01: {{ $course->eligibility01 }}</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align:left;">Eligibility 02: {{ $course->eligibility02 }}</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align:left;">Eligibility 03: {{ $course->eligibility03 }}</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align:left;">Eligibility 04: {{ $course->eligibility04 }}</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align:left;">Eligibility 05: {{ $course->eligibility05 }}</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align:left;">Eligibility 06: {{ $course->eligibility06 }}</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="text-align:left;">Description: {{ $course->description }}</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:center;"><a class="bg-danger text-white p-1 rounded" target="blank" href="{{ $course->weburl }}">Web Add URL</a></td>
-                                <td style="text-align:center;"><a class="bg-danger text-white p-1 rounded" target="blank" href="{{ $course->moredetailsurl }}">More Details</a></td>
-                                <td style="text-align:center;"><a class="bg-danger text-white p-1 rounded" target="blank" href="{{ $course->applyonlineurl }}">Applications</a></td>
-                                <td style="text-align:center;"><a class="bg-danger text-white p-1 rounded" href="{{ $course->image}}" target="blank">Program Banner</a></td>
-                                <td style="text-align:center;"><a class="bg-danger text-white p-1 rounded" href="mailto:{{ $course->email }}" target="blank">Coordinator Email</a></td>
+                                <td>Description:</td>
+                                <td colspan="4" style="text-align:left;"> {{ $course->description }}</td>
                             </tr>
                             <tr>
                                 <td colspan="5">

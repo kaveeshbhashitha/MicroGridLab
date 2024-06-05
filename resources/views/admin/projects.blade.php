@@ -9,15 +9,15 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admintable.css') }}" rel="stylesheet">
     <link rel="icon" href="{{ asset('image/admin.png') }}" type="image/x-icon">
-    <title>Projects</title>
+    <title>Industrial Projects</title>
 </head>
 <body>
     <x-admin-layout>
 
         <div style="background-color: rgb(245, 245, 245); display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; padding: 30px 0 30px 0;">
             <div id="international" class="form-box shadow p-3" style="width: 95%; height: auto; background-color: white; border-radius: 5px; padding-bottom: 30px;">
-                <h5>Make changes on Project</h5>
-                <div style="width: 12%; height: 1px; border: 1px solid rgb(87, 87, 87);"></div>
+                <h5>Make changes on Industrial Project</h5>
+                <div style="width: 18%; height: 1px; border: 1px solid rgb(87, 87, 87);"></div>
                 
                 <div class="my-2">
                     @if(session()->has('success'))
@@ -42,24 +42,17 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="text-align:left;">Project owner: {{ $project->studentname }}</td>
-                                <td style="text-align:left;">Others: {{ $project->othermembers }}</td>
-                                <td style="text-align:left;">Instructer: {{ $project->instructer }}</td>
-                                <td style="text-align:left;">Budget: {{ $project->budget }}</td>
+                                <td style="text-align:left;">Started Date: {{ $project->starteddate }}</td>
                                 <td style="text-align:left;">Rate: {{ $project->rate }}</td>
                             </tr>
                             <tr>
-                                <td style="text-align:left;">Started on: {{ $project->starteddate }}</td>
-                                <td style="text-align:left;">Ended on: {{ $project->endeddate }}</td>
                                 @if($project->progress == 'completed')
-                                    <td style="text-align:left;" class="text-success">Progress: {{ $project->progress }}</td>
+                                    <td colspan="5" style="text-align:left;" class="text-success">Progress: {{ $project->progress }}</td>
                                 @elseif($project->progress == 'ongoing')
-                                    <td style="text-align:left;" class="text-primary">Progress: {{ $project->progress }}</td>
+                                    <td colspan="5" style="text-align:left;" class="text-primary">Progress: {{ $project->progress }}</td>
                                 @else
-                                    <td style="text-align:left;" class="text-danger">Progress: {{ $project->progress }}</td>
+                                    <td colspan="5" style="text-align:left;" class="text-danger">Progress: {{ $project->progress }}</td>
                                 @endif
-                                <td style="text-align:left;">Estimate Due: {{ $project->estduration }}</td>
-                                <td style="text-align:left;">Client: {{ $project->client }}</td>
                             </tr>
                             <tr>
                                 <td colspan="5" style="text-align:left;">Description: {{ $project->description }}</td>

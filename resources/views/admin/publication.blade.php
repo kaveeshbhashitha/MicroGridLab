@@ -42,17 +42,6 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="3" style="text-align:left;">Publisher: {{ $pub->pubname }}</td>
-                                <td colspan="3" style="text-align:left;">Published Journal: {{ $pub->pubjournal }}</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:left;">Date: {{ $pub->pubdate }}</td>
-                                <td style="text-align:left;">Volume: {{ $pub->volume }}</td>
-                                <td style="text-align:left;">Issue: {{ $pub->issue }}</td>
-                                <td style="text-align:left;">Pages: {{ $pub->pages }}</td>
-                                <td style="text-align:left;">Rate: {{ $pub->rate }}</td>
-                            </tr>
-                            <tr>
                                 <td colspan="5" style="text-align:left;">Abstract: {{ $pub->description }}</td>
                             </tr>
                             <tr>

@@ -39,7 +39,7 @@
                         <th>Telephone</th>
                         <th>Department</th>
                         <th>Faculty</th>
-                        <th>University</th>
+                        <th>Position</th>
                         <th>Links</th>
                         <th>Actons</th>
                     </tr>

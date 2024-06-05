@@ -41,45 +41,13 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail4">Student(s) Name</label>
-                            <input type="text" name="studentname" class="form-control" id="inputEmail4" value="{{ $project->studentname }}">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail4">Project Instructor</label>
-                            <input type="text" name="instructer" class="form-control" id="inputEmail4" value="{{ $project->instructer }}">
-                        </div>
-                    </div>
 
                     <div class="form-row">
-                        <div class="form-group col-md-12">
-                            <label for="inputCity">Other project group members (separate using ',' )</label>
-                            <input type="text" name="othermembers" class="form-control" id="inputCity" value="{{ $project->othermembers }}">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
+                        <div class="form-group col-md-6">
                             <label for="inputAddress">Started Date</label>
                             <input type="date" name="starteddate" class="form-control" id="inputAddress" value="{{ $project->starteddate }}">
                         </div>
-                        <div class="form-group col-md-3">
-                            <label for="inputAddress">Ended Date</label>
-                            <input type="date" name="endeddate" class="form-control" id="inputAddress" value="{{ $project->endeddate }}">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="inputAddress">Estimated Duration</label>
-                            <input type="text" name="estduration" class="form-control" id="inputAddress" value="{{ $project->estduration }}">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="inputAddress">Budget (Rs.)</label>
-                            <input type="text" name="budget" class="form-control" id="inputAddress" value="{{ $project->budget }}">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-5">
+                        <div class="form-group col-md-6">
                             <label for="inputCity">Progress</label>
                             <select id="inputState" class="form-control" name="progress">
                                 <option selected value="{{ $project->progress }}">{{ $project->progress }}</option>
@@ -88,21 +56,6 @@
                                 <option value="pending">Pending</option>
                                 <option value="holded">Holded</option>
                             </select>
-                        </div>
-                        <div class="form-group col-md-1">
-                            <label for="inputCity">Rate</label>
-                            <select id="inputState" class="form-control" name="rate">
-                                <option selected value="{{ $project->rate }}">{{ $project->rate }}</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputAddress">Client</label>
-                            <input type="text" name="client" class="form-control" id="inputAddress" value="{{ $project->client }}">
                         </div>
                     </div>
 

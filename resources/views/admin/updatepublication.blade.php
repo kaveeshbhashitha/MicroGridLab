@@ -43,34 +43,7 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail4">Publisher Name</label>
-                            <input type="text" name="pubname" class="form-control" id="inputEmail4" placeholder="Enter main publication name..." value="{{ $publication->pubname }}">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail4">Published Journal</label>
-                            <input type="text" name="pubjournal" class="form-control" id="inputEmail4" placeholder="Enter journal name..." value="{{ $publication->pubjournal }}">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="inputAddress">Date</label>
-                            <input type="date" name="pubdate" class="form-control" id="inputAddress" placeholder="Enter date " value="{{ $publication->pubdate }}">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="inputAddress">Issue</label>
-                            <input type="text" name="issue" class="form-control" id="inputAddress" placeholder="Enter issue" value="{{ $publication->issue }}">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="inputAddress">Volume</label>
-                            <input type="text" name="volume" class="form-control" id="inputAddress" placeholder="Enter volume" value="{{ $publication->volume }}">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputAddress">Pages</label>
-                            <input type="text" name="pages" class="form-control" id="inputAddress" placeholder="Enter pages" value="{{ $publication->pages }}">
-                        </div>
-                        <div class="form-group col-md-1">
+                        <div class="form-group col-md-5">
                             <label for="inputAddress2">Rate</label>
                             <select id="inputState" class="form-control" name="rate">
                                 <option selected value="{{ $publication->rate }}">{{ $publication->rate }}</option>
